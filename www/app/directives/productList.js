@@ -129,7 +129,7 @@ angular
 
                             qs = getQueryStringParameters(result);
                             if (qs.bannerid == undefined) {
-                                return true;
+                                return false;
                             }
 
                             //bannerid = qs.bannerid;

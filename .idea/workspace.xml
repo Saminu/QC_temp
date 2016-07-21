@@ -94,10 +94,10 @@
                 <element signature="e#367#948#0" expanded="false" />
                 <element signature="e#1010#1448#0" expanded="false" />
                 <element signature="e#1546#2114#0" expanded="false" />
-                <element signature="e#8301#8360#0" expanded="false" />
-                <element signature="e#8448#8537#0" expanded="false" />
-                <element signature="e#8589#8770#0" expanded="false" />
-                <element signature="e#8853#9376#0" expanded="false" />
+                <element signature="e#8302#8361#0" expanded="false" />
+                <element signature="e#8449#8538#0" expanded="false" />
+                <element signature="e#8590#8771#0" expanded="false" />
+                <element signature="e#8854#9377#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -767,12 +767,12 @@
       <option name="number" value="Default" />
       <updated>1469062145992</updated>
       <workItem from="1469062148792" duration="1711000" />
-      <workItem from="1469108948455" duration="696000" />
+      <workItem from="1469108948455" duration="724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2407000" />
+    <option name="totallyTimeSpent" value="2435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1390" height="793" extended-state="0" />
@@ -876,10 +876,10 @@
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#8301#8360#0" expanded="false" />
-            <element signature="e#8448#8537#0" expanded="false" />
-            <element signature="e#8589#8770#0" expanded="false" />
-            <element signature="e#8853#9376#0" expanded="false" />
+            <element signature="e#8302#8361#0" expanded="false" />
+            <element signature="e#8449#8538#0" expanded="false" />
+            <element signature="e#8590#8771#0" expanded="false" />
+            <element signature="e#8854#9377#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1008,10 +1008,10 @@
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#8301#8360#0" expanded="false" />
-            <element signature="e#8448#8537#0" expanded="false" />
-            <element signature="e#8589#8770#0" expanded="false" />
-            <element signature="e#8853#9376#0" expanded="false" />
+            <element signature="e#8302#8361#0" expanded="false" />
+            <element signature="e#8449#8538#0" expanded="false" />
+            <element signature="e#8590#8771#0" expanded="false" />
+            <element signature="e#8854#9377#0" expanded="false" />
           </folding>
         </state>
       </provider>
