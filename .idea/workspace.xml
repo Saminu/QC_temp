@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5bae9c1d-e8c0-4b40-9806-73a0744c9c0e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/directives/productList.js" afterPath="$PROJECT_DIR$/www/app/directives/productList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="QC_temp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,19 +88,16 @@
       <file leaf-file-name="productList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app/directives/productList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23148148">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.79136693">
+              <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
               <folding>
                 <element signature="e#367#948#0" expanded="false" />
                 <element signature="e#1010#1448#0" expanded="false" />
                 <element signature="e#1546#2114#0" expanded="false" />
-                <element signature="e#2220#2692#0" expanded="false" />
-                <element signature="e#2810#3447#0" expanded="false" />
-                <element signature="e#4238#7894#0" expanded="false" />
-                <element signature="e#8344#8403#0" expanded="false" />
-                <element signature="e#8491#8580#0" expanded="false" />
-                <element signature="e#8632#8813#0" expanded="false" />
-                <element signature="e#8896#9419#0" expanded="false" />
+                <element signature="e#8350#8409#0" expanded="false" />
+                <element signature="e#8497#8586#0" expanded="false" />
+                <element signature="e#8638#8819#0" expanded="false" />
+                <element signature="e#8902#9425#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -771,12 +767,12 @@
       <option name="number" value="Default" />
       <updated>1469062145992</updated>
       <workItem from="1469062148792" duration="1711000" />
-      <workItem from="1469108948455" duration="231000" />
+      <workItem from="1469108948455" duration="403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1942000" />
+    <option name="totallyTimeSpent" value="2114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1390" height="793" extended-state="0" />
@@ -785,7 +781,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -880,13 +876,10 @@
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#2220#2692#0" expanded="false" />
-            <element signature="e#2810#3447#0" expanded="false" />
-            <element signature="e#4238#7894#0" expanded="false" />
-            <element signature="e#8344#8403#0" expanded="false" />
-            <element signature="e#8491#8580#0" expanded="false" />
-            <element signature="e#8632#8813#0" expanded="false" />
-            <element signature="e#8896#9419#0" expanded="false" />
+            <element signature="e#8350#8409#0" expanded="false" />
+            <element signature="e#8497#8586#0" expanded="false" />
+            <element signature="e#8638#8819#0" expanded="false" />
+            <element signature="e#8902#9425#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1001,19 +994,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/app/directives/productList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23148148">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.79136693">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
           <folding>
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#2220#2692#0" expanded="false" />
-            <element signature="e#2810#3447#0" expanded="false" />
-            <element signature="e#4238#7894#0" expanded="false" />
-            <element signature="e#8344#8403#0" expanded="false" />
-            <element signature="e#8491#8580#0" expanded="false" />
-            <element signature="e#8632#8813#0" expanded="false" />
-            <element signature="e#8896#9419#0" expanded="false" />
+            <element signature="e#8350#8409#0" expanded="false" />
+            <element signature="e#8497#8586#0" expanded="false" />
+            <element signature="e#8638#8819#0" expanded="false" />
+            <element signature="e#8902#9425#0" expanded="false" />
           </folding>
         </state>
       </provider>

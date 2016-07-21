@@ -107,7 +107,7 @@ angular
 
                 $scope.openXvalues = function (feed, counter) {
                     if (counter >= 50) {
-                        return
+                        return feed;
                     }
                     $http.get('//adtracker.quiddicompare.co.uk/www/delivery/ajs.php?zoneid=35&block=1&exclude=,bannerid:' + $scope.bannerid_exclude_list + '&charset=UTF-8&loc=http%3A//adtracker.quiddicompare.co.uk/www/admin/zone-invocation.php%3Faffiliateid%3D4%26zoneid%3D9&referer=http%3A//adtracker.quiddicompare.co.uk/www/admin/zone-invocation.php%3Faffiliateid%3D4%26zoneid%3D9&context=YjoyODh8&mmm_fo=1'
                     ).success(function (data) {
