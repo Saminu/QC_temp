@@ -11,6 +11,6 @@ filter('textOrNumber', function ($filter) {
             return input;
         } else {
             return $filter('number')(input, fractionSize);
-        };
+        }
     };
 });

@@ -2,7 +2,6 @@
  * Created by simba on 05/02/15.
  */
 angular.module('formApp')
-
     .config(['$httpProvider', function ($httpProvider) {
         $httpProvider.defaults.withCredentials = false;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
