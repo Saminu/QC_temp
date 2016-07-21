@@ -1,0 +1,124 @@
+<table class="listing">
+    <!--desktop headers-->
+    <thead class="hidden-xs">
+    <tr>
+        <th
+                ng-repeat="definition in feed.meta"
+                ng-class="{ 'hidden-xs': !definition.isMobile }"
+                ng-hide="definition.message || definition.image">
+            {{ definition.label }}
+        </th>
+    </tr>
+    </thead>
+    <!--end of desktop headers-->
+    <!--<tbody ng-repeat="product in feed.data | orderBy:listOrder">-->
+    <!--<tbody ng-repeat="product in feed.data | orderBy:mySortFunction">-->
+
+    <tbody ng-repeat="product in finalResult track by $index">
+
+    <!--3 columns for mobile over table-->
+    <tr class="visible-xs header-xs">
+        <td colspan="{{ getAprColspan(true) }}">
+            <img ng-if="product.logUrl" ng-src="{{ product.logUrl }}" alt=""
+                 style="position: absolute; left: 0px; top: 0px; visibility: hidden;"/>
+
+            <div class="row">
+                <div class="col-xs-4" class="header-xs">
+                    <img ng-src="{{ product.imageUrl }}" alt=""/>
+                </div>
+                <div class="col-xs-4" class="header-xs">
+                    <p ng-bind-html="product.provider | nl2br"></p>
+                </div>
+                <div class="col-xs-4" class="header-xs">
+                    <a ng-click="adrollPixel()" ng-href="{{ product.openxurl }}" class="apply" target="_blank" analytics-on
+                       analytics-event="OpenX" analytics-category="Short Term Finance"
+                       analytics-label="{{product.provider | nl2br}}">Visit website</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <!--end of 3 columns for mobile over table-->
+
+    <!--repeated headers for mobile view-->
+    <tr class="visible-xs">
+        <th ng-repeat="definition in feed.meta" ng-class="{ 'hidden-xs': !definition.isMobile }">
+            {{ definition.label }}
+        </th>
+    </tr>
+    <!--end of repeated headers for mobile view-->
+
+    <!--data-->
+    <tr>
+        <td ng-repeat="definition in feed.meta"
+            ng-class="{ 'hidden-xs': !definition.isMobile, {{ definition.name }}: true, 'provider-name': definition.useImage }"
+            ng-if="!definition.message && !definition.image" rowspan="{{ getImgRowspan(definition.useImage) }}">
+            <!--<a ng-if="definition.link" ng-href="{{ product[definition.name] }}" class="apply" target="_blank">{{ definition.label }}</a>-->
+            <a ng-click="adrollPixel()" ng-if="definition.link" ng-href="{{ product.openxurl }}" class="apply" target="_blank"
+               analytics-on analytics-event="OpenX" analytics-category="Short Term Finance"
+               analytics-label="{{product.provider | nl2br}}">{{ definition.label }}</a>
+            <img ng-if="definition.useImage" ng-src="{{ product.imageUrl }}" alt="" class="hidden-xs"/>
+
+            <p ng-if="!definition.link && !definition.image" ng-bind-html="product[definition.name] | nl2br"></p>
+        </td>
+    </tr>
+    <tr ng-repeat="definition in feed.meta" ng-if="definition.message">
+        <td class="hidden-xs apr-message" colspan="{{ getAprColspan(false) }}">{{ product[definition.name] }}</td>
+        <td class="visible-xs apr-message" colspan="{{ getAprColspan(true) }}">{{ product[definition.name] }}</td>
+    </tr>
+    <!--end of data-->
+    </tbody>
+    <tbody ng-show="shortterm" ng-repeat="product in feed.data">
+
+    <!--3 columns for mobile over table-->
+    <tr class="visible-xs header-xs">
+        <td colspan="{{ getAprColspan(true) }}">
+            <img ng-if="product.logUrl" ng-src="{{ product.logUrl }}" alt=""
+                 style="position: absolute; left: 0px; top: 0px; visibility: hidden;"/>
+
+            <div class="row">
+                <div class="col-xs-4" class="header-xs">
+                    <img ng-src="{{ product.imageUrl }}" alt=""/>
+                </div>
+                <div class="col-xs-4" class="header-xs">
+                    <p ng-bind-html="product.provider | nl2br"></p>
+                </div>
+                <div class="col-xs-4" class="header-xs">
+                    <a ng-click="adrollPixel()" ng-href="{{ product['link'] }}" class="apply" target="_blank" analytics-on
+                       analytics-event="OpenX" analytics-category="Short Term Finance"
+                       analytics-label="{{product.provider | nl2br}}">Visit website</a>
+                    <!--<a ng-href="{{ product['link'] }}" class="apply" target="_blank" onClick="_gaq.push(['_trackEvent', 'Test', 'OpenX', '{{product.provider | nl2br}}']);">Visit website</a>-->
+                </div>
+            </div>
+        </td>
+    </tr>
+    <!--end of 3 columns for mobile over table-->
+
+    <!--repeated headers for mobile view-->
+    <tr class="visible-xs">
+        <th ng-repeat="definition in feed.meta" ng-class="{ 'hidden-xs': !definition.isMobile }">
+            {{ definition.label }}
+        </th>
+    </tr>
+    <!--end of repeated headers for mobile view-->
+
+    <!--data-->
+    <tr>
+        <td ng-repeat="definition in feed.meta"
+            ng-class="{ 'hidden-xs': !definition.isMobile, {{ definition.name }}: true, 'provider-name': definition.useImage }"
+            ng-if="!definition.message && !definition.image" rowspan="{{ getImgRowspan(definition.useImage) }}">
+            <!--<a ng-if="definition.link" ng-href="{{ product[definition.name] }}" class="apply" target="_blank">{{ definition.label }}</a>-->
+            <a ng-click="adrollPixel()" ng-if="definition.link" ng-href="{{ product[definition.name] }}" class="apply" target="_blank"
+               analytics-on analytics-event="OpenX" analytics-category="Short Term Finance"
+               analytics-label="{{product.provider | nl2br}}">{{ definition.label }}</a>
+            <img ng-if="definition.useImage" ng-src="{{ product.imageUrl }}" alt="" class="hidden-xs"/>
+
+            <p ng-if="!definition.link && !definition.image" ng-bind-html="product[definition.name] | nl2br"></p>
+        </td>
+    </tr>
+    <tr ng-repeat="definition in feed.meta" ng-if="definition.message">
+        <td class="hidden-xs apr-message" colspan="{{ getAprColspan(false) }}">{{ product[definition.name] }}</td>
+        <td class="visible-xs apr-message" colspan="{{ getAprColspan(true) }}">{{ product[definition.name] }}</td>
+    </tr>
+    <!--end of data-->
+    </tbody>
+</table>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>Compare Mortgages Rates – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Compare the best and cheapest mortgage rates in the UK with Quiddi Compare.">
+    <meta name="keywords" content="Compare Mortgages, Mortgage Comparison">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="./libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/baseline.reset.css">
+    <link rel="stylesheet" href="./css/baseline.form.css">
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="/libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="/libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="/libs/xdomain/dist/0.6/xdomain.min.js"
+            slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <script type="application/javascript">
+        $('input, textarea').placeholder();
+    </script>
+    <script src="./libs/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-ng-app="formApp">
+
+<div class="container wrapper">
+
+    <div id="header"></div>
+
+    <div class="breadcrumb hidden-xs hidden-sm">
+        You are here » <a href="index.html" class="bc-active">Home</a> » <a href="mortgage.html">Mortgages</a>
+    </div>
+    <section class="side-collapse-container">
+        <div class="row main-centre hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="jumbotron BG-purple">
+                    <div class="row">
+                        <div class="col-md-4 text">
+                            <h1><strong><span class='replace-seed-value'>Compare Mortgages Rates </span></strong></h1>
+
+                            <h2>Compare the best mortgage deals in the UK</h2>
+                            <img class="hidden" src="images/5-star-large.png">
+                        </div>
+                        <div class="col-md-8 slider-image">
+                            <img class="img-responsive pull-right hidden-sm hidden-xs"
+                                 src="images/new-banners/Mortgage-Website-Banner.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="BG-purple purple-Bar text-center mortgage-theme-primary">
+                    <h2 class="text-center"><strong><span>Mortgage Comparison</span></strong></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" ng-controller="mortgageController">
+            <div class="col-md-4 left-sidebar">
+                <img class="img-responsive hidden-md hidden-lg" src="./mortgages/images/mortgage-mobile.png">
+
+                <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+                <div id="mortgage-calculator"></div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                    <div class="panel-body">
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/buy-to-let-mortgage.html">Buy to Let
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/remortgage-deals.html">Remortgage Deals</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                    Ownership Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading bar-pupple">Useful Information</div>
+                    <div class="panel-body">
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                    to save money on your mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                    arrears help</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                    Glossary</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                    happens if you cannot repay your mortgage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-sidebar">
+                <div class="row center-table">
+                    <div class="col-md-12">
+                        <img class="img-responsive hidden-xs hidden-sm" src="./mortgages/images/mortgage-desktop.png">
+                    </div>
+                    <div ng-include src="'/templates/mortgage-providers.html'"></div>
+                    <div class="col-md-12">
+                        <p><a href="http://en.wikipedia.org/wiki/Mortgage_loan" target="_new">A mortgage is a type of
+                            loan</a> used to buy new property or for existing property owners to raise funds for any
+                            purpose. The monthly loan repayments allow individuals to pay for their property for an
+                            extended
+                            period, usually around 25 years, until they clear their payments and have full ownership of
+                            the
+                            property. Mortgage rates are offered by banks, credit unions and building societies and the
+                            loans are secured against the property so the provider is able to repossess the estate if
+                            the
+                            borrower defaults on repayment or does not abide by the terms of the agreement.
+                        </p>
+
+                        <h2>Best mortgage rates and deals from Quiddi Compare</h2>
+
+                        <p>We work with the top mortgage providers in the UK to offer the best rates available. Simply
+                            fill
+                            in our form above and one of dedicated agents will call you and recommend a mortgage deal
+                            based
+                            on the criteria you have provided. We are pleased to offer this personalised service
+                            completely
+                            free of charge and we are constantly on the look out for new deals to ensure our customers
+                            are
+                            getting the best mortgage rates.</p>
+
+                        <h2>Cheap mortgages – how can you find them?</h2>
+
+                        <p>Cheap mortgages will depend on which provider offers the lowest interest rate. To find the
+                            cheapest mortgage, borrowers need to decide whether to select a mortgage at a fixed rate or
+                            a
+                            variable rate. A fixed rate means that the interest will stay the same throughout the entire
+                            mortgage period whereas a variable rate means that the rate you pay will change based on
+                            economic factors such as inflation and bank rates. By having a variable rate, it means that
+                            you
+                            could be paying less for your mortgage than if you were with a fixed rate but it can also
+                            mean
+                            that you might pay more.</p>
+
+                        <p>Mortgage rates are presented in the form of APR, which stands for the annual percentage rate
+                            and
+                            allows you to compare mortgage rates easily. The annual calculation considers the fact that
+                            mortgages last a number of years and the rate is compared on an annual basis. The average
+                            mortgage lasts for around 25 years with the option to choose a longer or shorter period of
+                            time.
+                            By having a longer mortgage deal, it will consist of cheap repayments spread out over a long
+                            period of time. The shorter the term, the sooner you will be able to clear the mortgage
+                            payments
+                            completely and have ownership of the property. For this reason, you need to compare price in
+                            order to find the best short-term mortgages that you can afford.</p>
+
+                        <h2>How much can I borrow for a mortgage?</h2>
+
+                        <p>How much you can borrow for a mortgage loan requires you to look at the LTV (loan to value).
+                            The
+                            LTV typically ranges from 60% - 90% and refers to how much of the property value the
+                            mortgage
+                            provider can lend you. To give an example, if you are looking to borrow a property worth
+                            £100,000 and the LTV is 75%, you will have to make a down payment of 25% of the value
+                            (£25,000)
+                            and the provider will lend you the remaining 75%. You will need to assess your finances and
+                            affordability to determine how much LTV you need. Borrowers are encouraged to use mortgage
+                            loan
+                            calculators to find out how much LTV they require and what monthly payments they can afford
+                            moving forward. It is also advisable to have the property valued and appraised again to
+                            confirm
+                            the value of the estate because going ahead.</p>
+
+                        <p>In addition, how much you can borrow will depend on your personal circumstances and
+                            eligibility
+                            for a mortgage. If you application is approved, you will be given a ‘decision in principle’
+                            and
+                            this confirms how much you are able to borrow. How successful your mortgage application is,
+                            the
+                            interest rates you are charged and the LTV will depend on the following:</p>
+
+                        <p><strong>Higher deposits – </strong>The higher deposit you are able to make, the better
+                            interest
+                            rate you will likely be offered because you own will more of the property than the average
+                            customer. For instance, if you were put around 40% of the property value up front, you will
+                            only
+                            require a 60% mortgage and may be eligible for one of the lowest rates.</p>
+
+                        <p><strong>Credit History – </strong>mortgage underwriters will look carefully are your credit
+                            history upon offering you a decision in principle. How well you have paid other loans and
+                            forms
+                            of credit in the past will impact the success of your application and the LTV you are
+                            offered.
+                            Underwriters will also look at whether you have had other mortgages in the past and how well
+                            you
+                            have made your repayments. Other credit related factors that may affect the success of your
+                            application include whether you have ever been bankrupt or had an IVA or CCJ. There are
+                            mortgages for bad credit available but this will usually involve higher interest rates and
+                            lower
+                            a LTV. For more information, you can <a
+                                    href="https://quiddicompare.co.uk/credit-checks.html"
+                                    target="_new">check your credit score here</a>.</p>
+
+                        <p><strong>Employment – </strong>mortgage providers will take your employment into perspective
+                            when
+                            making a decision. Positive things that will help your application include being in
+                            employment
+                            for a long period of time and how long you have been with the company and your growth in
+                            salary
+                            over the years.</p>
+
+                        <p><strong>Debt to income – </strong>part of the mortgage application involves understanding
+                            your
+                            level of income and expenditure to income more carefully. Underwriters will usually require
+                            copies of your pay-slips and bank statements in order to get a better idea of how much you
+                            earn
+                            and what you spend your money on. Before granting a decision in principle, mortgage
+                            companies
+                            need to ensure that you are able to afford the monthly repayments.</p>
+
+                        <p><strong>Mortgage Schemes – </strong>depending on your type of employment, you may be eligible
+                            for
+                            schemes to help you get a mortgage such as <a
+                                    href="https://www.gov.uk/affordable-home-ownership-schemes/overview" target="_new">affordable
+                                housing</a>, help to buy schemes and credit unions.</p>
+
+                        <p><strong>Economic factors – </strong>the state of the economy will also have an impact on
+                            whether
+                            you are successful with your mortgage application. A good economy encourages the banks to
+                            lend
+                            out money at generous LTVs whereas a struggling economy causes banks to be more cautious
+                            over
+                            whom they lend to and the loan to value they allocate.</p>
+
+                        <h3>Beware of added fees</h3>
+
+                        <p>To save money on your mortgage before you apply, it is important to be aware of early
+                            repayment
+                            <strong>charges</strong>. It’s great if you are able to repay your mortgage early but many
+                            companies charge an early repayment charge (EPC) of around 2% for doing so.
+                            It is important to consider how long you plan to be at the new estate prior to agreeing the
+                            mortgage. If you think that you are going to move after 5 years and you are confident with
+                            your
+                            level of income and expenditure, it would be worth selecting a five-year product rather than
+                            locking yourself in for much longer.</p>
+
+                        <p>There are additional set-up fees involved with getting a mortgage. Mortgage brokers and
+                            lenders
+                            will typically charge a <strong>booking fee</strong> for getting a quote for you and
+                            reserving
+                            it. The second is an <strong>arrangement fee</strong>, which is paid to the broker or
+                            provider
+                            on the completion of the mortgage. The way around these fees is to only proceed if you
+                            believe
+                            you are getting the best rate possible. If could be worth getting a higher interest rate
+                            with a
+                            lower booking fee or it could be better getting a lower interest rate with a higher booking
+                            fee.
+                            It is important to speak to the provider about your options before going ahead and ensure
+                            that
+                            you take these extra costs into account.</p>
+
+
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                        <p class="small text-center">
+                            THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED
+                            IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT.<br>
+                            Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other
+                            services they provide. MAKE SURE you check with the company before agreeing to any service
+                            if they charge you a fee and what the terms are.<br>
+                            Warning: Late repayment can cause you serious money problems. For help, go to
+                            moneyadviceservice.org.uk
+                            QuiddiCompare does not charge a fee and does not provide any financial advice relating to
+                            mortgages. However we may on occasion receive commissions from IFA’s and mortgage providers,
+                            brokers and intermediaries for introducing you to them.<br>
+                            The content of this site is meant to be informational, and it should not be considered
+                            financial advice. - See more at: <a target="_blank"
+                                                                href="https://quiddicompare.co.uk/mortgages">quiddicompare.co.uk/mortgages</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</div>
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--&lt;!&ndash;[if lte IE 9]>-->
+<!--<script src="libs/es5-shim/es5-shim.min.js"></script>-->
+<!--<script src="libs/es5-shim/es5-sham.min.js"></script>-->
+<!--<![endif]&ndash;&gt;-->
+
+<!--angular tags-->
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular-resource/angular-resource.min.js"></script>
+<script src="libs/angulartics/src/angulartics.js"></script>
+<script src="libs/angulartics/src/angulartics-ga.js"></script>
+<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="libs/angular-animate.min/index.js"></script>
+<script src="libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="libs/raven-js/dist/raven.js"></script>
+<script>
+    Raven.config('https://1afb1d3a2d7141519c638708c53ed4e2@monitor.quiddiportal.com/13', {
+        // pass along the version of your application
+        // release: '1.0.0',
+
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+//        whitelistUrls: ['example.com/scripts/']
+
+    }).install();
+    Raven.isSetup();
+
+//    Raven.wrap({logger: "formApp"}, function(){ });
+//    Raven.captureMessage('Broken!', {tags: { key: "value" }});
+//    Raven.captureException(e, {extra: { foo: "bar" }})
+</script>
+
+<script src="app/form.js"></script>
+<script src="app/controllers/formController.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

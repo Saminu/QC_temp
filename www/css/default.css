@@ -1,0 +1,33 @@
+body {
+  background-color: #F1F1F1;
+  margin-top: 0;
+}
+.wrapper {
+  background-color: white;
+  padding-top: 20px;
+}
+.BG-purple {
+  background: #8b479c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8b479c 0%, #5f2e8e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8b479c), color-stop(100%, #5f2e8e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8b479c 0%, #5f2e8e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8b479c 0%, #5f2e8e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8b479c 0%, #5f2e8e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8b479c 0%, #5f2e8e 100%);
+  /* W3C */
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .wrapper {
+    width: 85%;
+    margin-top: 0;
+  }
+}

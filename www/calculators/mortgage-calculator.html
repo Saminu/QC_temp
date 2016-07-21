@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>Mortgage calculator – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="Mortgage repayment calculator for buy to let, commercial, interest only, offset and shared ownership mortgages in the UK.">
+    <meta name="keywords" content="mortgage calculator">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="/libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="/libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="/libs/xdomain/dist/0.6/xdomain.min.js"
+            slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="formApp">
+
+<div class="container wrapper">
+<div id="header"></div>
+<div class="breadcrumb hidden-xs hidden-sm">
+    You are here » <a href="../index.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../calculators/mortgage-calculator.html">Mortgage calculator</a>
+</div>
+<section class="side-collapse-container">
+    <div class="row main-centre hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="jumbotron BG-purple">
+                <div class="row">
+                    <div class="col-md-4 text">
+                        <h1><strong><span class='replace-seed-value'>Mortgage Calculator</span></strong></h1>
+                        <h3>Use our free calculator to assess your monthly mortgage repayments</h3>
+                        <img class="hidden" src="../images/5-star-large.png">
+                    </div>
+                    <div class="col-md-8 slider-image">
+                        <img class="img-responsive pull-right hidden-sm hidden-xs"
+                             src="../images/new-banners/calculator-banner.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="BG-purple purple-Bar text-center mortgage-theme-primary">
+                <h2 class="text-center"><strong><span>Mortgage Repayment Calculator</span></strong></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-controller="mortgageController">
+        <div class="col-md-4 left-sidebar">
+            <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/interest-only-mortgages.html">Interest only mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-mortgage.html">Buy to let
+                                mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                Ownership Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                Mortgages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Useful Information</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                Glossary</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                to save money on your mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                happens if you cannot repay your mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                arrears help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 right-sidebar">
+            <div class="row center-table">
+                <div class="col-md-12">
+                    <div>
+                        <noscript><p>You have javascript turned off. Please turn javascript on to see the tools in action.</p></noscript>
+                        <p>
+                            <a id="mortgage_calculator_new" class="mas-widget" target="_blank" lang="en" href="https://www.moneyadviceservice.org.uk/en/tools/mortgage-calculator-new" data- width="100%">Calculate your monthly mortgage payment</a>
+                        </p>
+                    </div>
+                    <script class='application_scripts' src="https://www.moneyadviceservice.org.uk/assets/syndication/tools.js"></script>
+
+                </div>
+                <div class="col-md-12 hidden">
+                    <h2>Compare fixed rate mortgages from Quiddi Compare</h2>
+
+                    <p>We offer the best fixed rate mortgage deals from some of the leading mortgage providers in the
+                        UK. By simply filling in your details above, one of advisors will call you to assist with your
+                        mortgage application. We are committed to helping you find the best offer which is why we will
+                        try to pair up your requirements with the best provider possible. We are always looking for new
+                        partners to work with so you can confident that you will be getting the best deals possible.
+                        Usually, to access the lowest fixed mortgage rates, it helps to have a good credit rating and a
+                        large deposit available. If you already have a property in mind, be sure to budget how much you
+                        think you can afford and what kind of loan-to-value (LTV) you require.</p>
+
+                    <h2>Fixed rate mortgage – how does it work?</h2>
+
+                    <p>A fixed rate mortgage is the interest rate you pay to the mortgage provider and remains the same
+                        throughout the mortgage term typically lasting 2,3,5 or 10 years. The interest rate you pay is
+                        not affected by the lender’s standard variable rate or the Bank of England’s base rate. At the
+                        end of the fixed term, your mortgage will usually be transferred to the lenders standard
+                        variable rate (SVC) but this is usually higher than average so at this point you would likely
+                        find a new mortgage deal.</p>
+
+                    <p>The key advantage of a fixed rate mortgage is that it you can be sure that there will be no
+                        changes in the interest rate you are paying. So for homeowners that are looking to budget, they
+                        will know exactly how much they will be paying month after month and year after year. If there
+                        are ever changed in the Bank of England’s base rate, you will not be affected because you will
+                        always be paying the same interest rate to your mortgage provider. There is also the opportunity
+                        to benefit from a lower interest rate in the first few years giving new buyers some disposable
+                        income to spend on furniture and home improvements.</p>
+
+                    <h2>Types of fixed rate mortgages</h2>
+
+                    <p>Fixed rate mortgage typically last for 2 to 3 years but lenders are most recently offering 5 to
+                        10 year products. The longer the mortgage term, the higher the interest rate you usually pay.
+                        This is because there is a premium for the added security for paying a fixed rate over a long
+                        period of time, free of any market fluctuations to the variable rate or Bank of England base
+                        rate.</p>
+
+                    <h2>2 year fixed rate mortgage</h2>
+
+                    <p>A 2 year fix is a very low-risk option because you will benefit if the other variable or base
+                        rate increases but if it does not, you can always change your mortgage after the two-year
+                        spell.</p>
+
+                    <h2>3 year fixed rate mortgage</h2>
+
+                    <p>By taking a 3 year fixed rate mortgage, the typical interest rate is likely to be slightly higher
+                        than a 2 year fix because you are paying for the extra security. However, this product might
+                        suit various homeowners who plan to move house again in the next years. This way, they can
+                        budget exactly what they are going to spend and can plan ahead.</p>
+
+                    <h2>5 year fixed rate mortgage</h2>
+
+                    <p>Since a 5 year fixed rate mortgage is a long period, the homeowner may in fact lose out on better
+                        rates in the market. If their mortgage company’s variable rate is lower, the homeowner will not
+                        be able to change mortgages very easily. The fixed rate mortgages have an early repayment
+                        penalty in order to tie you in for longer and this can cost up to 6 months of mortgage
+                        payments.</p>
+
+                    <h2>10 year fixed rate mortgage</h2>
+
+                    <p>The 10-year fix is usually the most expensive because again, you are paying to avoid the chance
+                        of any rate fluctuations. Similar to the 5-year product, there are early payment penalties that
+                        apply should you wish to change the type of mortgage product. As a result, homeowners on a 10
+                        year fixed mortgage rate may miss out on better rates available. Mortgage applicants are advised
+                        to consider the possibility of better rates being available before proceeding.</p>
+
+                    <h3>Useful advice</h3>
+
+                    <p>For anyone applying for a fixed rate mortgage, it is important to think about how long you want
+                        the loan for. If you think that you are in a financial position where you will be able to
+                        overpay on your mortgage, you can do so for up to 10% per year. However, there will be an early
+                        payment penalty should you wish to clear your debt early, up to 6 months worth of payments and
+                        this is not ideal. So it is essential to weigh up just how long you want the fixed mortgage for
+                        or whether you think that you would be better off with a tracker mortgage or variable
+                        mortgage.</p>
+
+                    <p>If you are still undecided, one of the most common things to do with a fixed rate mortgage is to
+                        use the fixed rate for 2 years and then to assess the variable rates and Bank of England base
+                        rate. Here, you can decide whether you should switch to a different mortgage product or indeed
+                        take out a new 2 year mortgage.</p>
+
+                    <p>When comparing the cost of mortgage products, it is important to remember that additional fees
+                        apply. Mortgage providers will always charge an arrangement fee for organizing the loan and this
+                        can cost a few hundred or thousand pounds. However, depending on the mortgage company, there may
+                        be deals available that reduce the arrangement fee e.g discounts for first time buyers. Also, be
+                        sure to see if the mortgage company offers rewards such as a cashback.</p>
+
+                    <p>Finally, it is recommended to carefully budget how much you can afford to repay on your mortgage
+                        each month. Failing to repay your monthly repayment on time may incur further charges and
+                        long-term arrears may lead to the repossession of your property. There is also the negative
+                        impact on your credit rating because your credit file is shared between the mortgage lender and
+                        other credit reference agencies. Failing to repay your mortgage payments on time may cause your
+                        credit score to fall and make it harder to access credit in the future.</p>
+
+
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class='st_facebook_hcount' displayText='Facebook'></span>
+                            <span class='st_twitter_hcount' displayText='Tweet'></span>
+                            <span class='st_googleplus_hcount' displayText='Google +'></span>
+                            <span class='st_email_hcount' displayText='Email'></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+</div>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

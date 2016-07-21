@@ -1,0 +1,59 @@
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+	.zerogrid{width:100%;}
+	.body-inside{ width:98%; margin-left:1%; margin-right:1%;} .apply ul li { padding-left:5%; width:95%;}
+	.content-box{ width:98%; margin-left:1%; margin-right:1%;}
+	.benefits ul li { width:90%; padding-left:10%;}
+	footer{ width:98%; margin-left:1%; margin-right:1%;}
+	
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.zerogrid{width:100%;}
+		.top { width:100%; text-align:center; padding-left:0%;}
+	.body-inside{ width:96%; margin-left:2%; margin-right:2%; text-align:center;}
+	.welcome-left{ width:100%; text-align:center;} .apply { margin-left:10%; width:90%;} .apply ul li { width:95%; padding-left:5%;}
+	.apply-bottom-box { width:100%; text-align:center;}
+	.welcome-right{ width:100%; text-align:center;} .inner-welcome-right{ width:100%; text-align:center; padding-bottom:15px;}
+	.benefit-box { width:96%; text-align:center;} .bottom-right-box { width:100%; text-align:center; padding-top:20px;} .benefits { width:80%; margin-left:20%;}
+	.benefits ul li { width:95%; padding-left:5%;}
+	.banner-text-box p { text-align:center;}
+	.content-left{ width:90%; text-align:center; margin-left:5%; margin-right:5%;} 
+	.content-right{ width:90%; text-align:center; margin-left:5%; margin-right:5%; padding-top:15px;} .content-right p { text-align:center;}
+	footer { margin-left:2%; margin-right:2%; width:96%;} .footer-top-left{ width:100%; text-align:center;} .footer-top-right{ width:90%; text-align:center; padding-top:10px; padding-left:5%; padding-right:5%;} .footer-bottom { text-align:center;} .footer-bottom p{ text-align:center;}
+
+	
+}
+
+@media only screen and (min-width: 300px) and (max-width: 479px)  {
+	/* -------------------------------------------- */
+	/* ------------------Grid System--------------- */
+	.zerogrid{width:100%; }
+	.top { width:100%; text-align:center; padding-left:0%;}
+	.body-inside{ width:96%; margin-left:2%; margin-right:2%; text-align:center;}
+	.welcome-left{ width:100%; text-align:center;} .apply { margin-left:4%; width:96%;}.apply ul li { padding-left:8%; width:92%;}
+	.apply-bottom-box { width:100%; text-align:center;}
+	.welcome-right{ width:100%; text-align:center;}.inner-welcome-right{ width:100%; text-align:center; padding-bottom:15px;}
+	.benefit-box { width:96%; text-align:center;} .bottom-right-box { width:100%; text-align:center; padding-top:20px;} .benefits { width:96%; margin-left:4%;}
+	.banner-text-box p { text-align:center;}
+		.content-left{ width:90%; text-align:center; margin-left:5%; margin-right:5%;} 
+	.content-right{ width:90%; text-align:center; margin-left:5%; margin-right:5%; padding-top:15px;} .content-right p { text-align:center;}
+	footer { margin-left:2%; margin-right:2%; width:96%;} .footer-top-left{ width:100%; text-align:center;} .footer-top-right{ width:90%; text-align:center; padding-top:10px; padding-left:5%; padding-right:5%;} .footer-bottom { text-align:center;} .footer-bottom p{ text-align:center;}
+		html {
+		-webkit-text-size-adjust: none;
+	}
+}
+
+	

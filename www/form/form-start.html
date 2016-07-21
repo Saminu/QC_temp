@@ -1,0 +1,41 @@
+
+<!-- form-profile.html -->
+<div ng-form="startForm">
+<h1>Mortgage Rates From <span>1.79%*</span></h1>
+<h1>Get a <strong>free Quote Now</strong></h1>
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': startForm.postcode.$valid }" >
+    <div class="input-group">
+        <label class="sr-only" for="postcode"></label>
+        <div class="input-group-addon">Post Code</div>
+        <input ng-model="formData.postcode" ng-blur="validate=true" ng-minlength="4" ng-maxlength="8" type="text" class="form-control input-lg" name="postcode" id="postcode" placeholder="Enter the postcode of your property" required>
+        <span ng-show="startForm.postcode.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    </div>
+    <div ng-show="startForm.postcode.$dirty && validate">
+    <p ng-show="startForm.postcode.$error.required" class="alert alert-danger">A Postcode is required.</p>
+    <p ng-show="startForm.postcode.$error.minlength" class="alert alert-warning">Correct Postcode length is required.</p>
+    <p ng-show="startForm.postcode.$error.maxLength" class="alert alert-warning">Correct Postcode length is required.</p>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-6 col-xs-12">
+        <!--<p><i class="fa fa-info-circle"></i> do not leave spaces</p>-->
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <a ng-click="getPostcode()" ui-sref="form.amount" class="btn btn-block btn-warning btn-lg form-apply" ng-disabled="!validator.isValid()" analytics-on analytics-event="Mortgage" analytics-category="Mortgage" analytics-label="1Start">
+            Start
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+    <!--<tt>isValid = {{validator.isValid()}}</tt><br>-->
+
+<div ng-show="validator.isValid()" class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+        20% Complete
+    </div>
+</div>
+
+</div>

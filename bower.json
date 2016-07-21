@@ -1,0 +1,41 @@
+{
+  "name": "QuiddiCompareUK",
+  "version": "2",
+  "authors": [
+    "Sam <s.salisu@live.co.uk>"
+  ],
+  "description": "Comparison Website",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1",
+    "bootstrap": "~3.2.0",
+    "cookieDirective": "git@bitbucket.org:olliephillips/cookiesdirective.js.git",
+    "components-font-awesome": "~4.2.0",
+    "html5shiv": "git://github.com/aFarkas/html5shiv.git#~3.7.2",
+    "respond": "https://github.com/scottjehl/Respond.git#~1.4.2",
+    "angular": "~1.2.26",
+    "angular-resource": "~1.2.26",
+    "xdomain": "~0.6",
+    "angulartics": "https://github.com/luisfarzati/angulartics.git#~0.17.1",
+    "angular-ui-router": "https://github.com/angular-ui/ui-router.git#~0.2.13",
+    "angular-animate.min": "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js",
+    "angular-shims-placeholder": "~0.4.4",
+    "raven-js": "~1.1.19"
+  },
+  "resolutions": {
+    "angular": "~1.2.26"
+  }
+}

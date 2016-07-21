@@ -1,0 +1,893 @@
+@font-face {
+  font-family: AsapRegular;
+  src: url(../fonts/asap/Asap-Regular.otf);
+}
+
+@font-face {
+  font-family: AsapBold;
+  //src: url(../fonts/asap/Asap-Bold.otf);
+  src: url(../fonts/asap/Asap-Medium.otf);
+}
+
+@font-face {
+  font-family: AsapBoldItalic;
+  src: url(../fonts/asap/Asap-BoldItalic.otf);
+}
+
+@primary-colour: #743A95;
+@grey: #EFEFEF;
+@white: #FFFFFF;
+@secondary-color: #FFC905;
+//@font-primary: ArialMT, Arial, Helvetica, sans-serif;
+@font-primary: AsapBold, Helvetica, sans-serif;
+
+.secure-logo {
+  color: @primary-colour;
+}
+
+body {
+  font-family: AsapRegular, Helvetica, sans-serif;
+}
+
+p {
+  font-family: AsapRegular, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: AsapBold, Helvetica, sans-serif;
+}
+
+input, button, select, textarea {
+  font-family: AsapRegular, Helvetica, sans-serif;
+}
+
+.navbar-inverse {
+  font-family: AsapRegular, Helvetica, sans-serif;
+}
+
+.navbar-default {
+  font-family: AsapRegular, Helvetica, sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1040px;
+  }
+}
+
+/* form styling */
+.form-container {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: @grey;
+
+  h1 {
+    font-family: @font-primary;
+    font-size: 44px;
+    color: @primary-colour;
+    line-height: 45px;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 34px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+  }
+
+  h2 {
+    font-family: @font-primary;
+    font-size: 36px;
+    color: #743A95;
+    line-height: 40px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+  .page-header {
+    background: #151515;
+    margin: 0;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .col-md-6 {
+    padding-left: 17px;
+  }
+
+  .fa {
+    color: @primary-colour;
+  }
+  .form-apply {
+    border-radius: 5px;
+    background: @secondary-color;
+    border: 1px solid #EEA236;
+    color: @primary-colour;
+    font-family: AsapBold, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    &:hover {
+      background-color: darken(@secondary-color, 5%);
+      color: lighten(@primary-colour, 5%);
+    }
+  }
+
+  .form-back {
+    color: @primary-colour;
+    font-family: AsapBold, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 12px;
+    padding: 0px;
+  }
+}
+
+.label-form {
+  font-family: @font-primary;
+  //  font-size: 26px;
+  color: #666;
+  //  line-height: 32px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form-group {
+
+  .btn-group {
+
+    input[type="radio"], input[type="checkbox"] {
+      display: none;
+      margin: 4px 0 0;
+      margin-top: 1px \9;
+      line-height: normal;
+
+    }
+
+  }
+
+  .primary-color {
+    background-color: @primary-colour;
+    border-color: darken(@primary-colour, 5);
+
+    &:active {
+      color: #fff;
+      background-color: @secondary-color;
+      border-color: @primary-colour;
+    }
+  }
+
+  label {
+    font-family: @font-primary;
+    //font-size: 26px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  .m-left8 {
+    margin-left: -8px;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+    }
+  }
+
+  .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 4px;
+  }
+
+  .input-group .form-control {
+    margin: 0px !important;
+  }
+
+  .input-lg, .form-horizontal .form-group-lg .form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 1.33;
+    border-radius: 2px;
+  }
+
+  .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+
+    //  select.input-lg {
+    //    height: 46px;
+    ////    line-height: 25px;
+    //    border-radius: 1px;
+    //  }
+
+    //  select{
+    //    border-radius: 0;
+    //    -webkit-appearance: textfield;
+    //  //  border: 0;
+    ////    outline: 1px inset black;
+    //  //  outline-offset:-1px
+    //  }
+
+    @media (max-width: 768px) {
+      //display: block;
+    }
+
+    select, input {
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  .input-group-addon {
+    padding: 6px 12px;
+    font-weight: normal;
+    color: @white;
+    text-align: center;
+    background-color: @primary-colour;
+    border: 1px solid @primary-colour;
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+
+    font-family: @font-primary;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  // Block level inputs
+  .input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 28px;
+  }
+
+}
+
+//.input-group-addon {
+//  border-radius: 4 !important;
+//}display: block; */
+
+/* numbered buttons */
+.status-buttons {
+
+  a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    background: #080808;
+    display: block;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding-top: 5px;
+    width: 30px;
+    border-radius: 50%;
+  }
+}
+
+.status-buttons a.active span {
+  background: #00BC8C;
+}
+
+.form-apply {
+  border-radius: 5px;
+  background: @secondary-color;
+  border: 1px solid #EEA236;
+  color: @primary-colour;
+  font-family: AsapBold, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  &:hover, &:active, &:focus {
+    background-color: darken(@secondary-color, 5%);
+    color: lighten(@primary-colour, 5%);
+  }
+}
+
+.form-apply-success {
+  border-radius: 5px;
+  background: #1A9C36;
+  border: 1px solid #1A9C36;
+  color: #FFFFFF;
+  font-family: AsapBold, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+
+  span {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+    -webkit-transform: rotate(80deg); /* Safari */
+    transform: rotate(80deg);
+  }
+
+  &:hover, &:active, &:focus {
+    background: #1A9C36;
+    color: #FFFFFF;
+    border: 1px solid #1A9C36;
+  }
+}
+
+.form-apply-progress {
+  border-radius: 5px;
+  background: #ffc023;
+  border: 1px solid #ffc023;
+  color: #FFFFFF;
+  font-family: AsapBold, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+
+  span {
+
+    @-moz-keyframes spin {
+      100% {
+        -moz-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+
+  &:hover, &:active, &:focus {
+    background: #ffc023;
+    border: 1px solid #ffc023;
+  }
+}
+
+//@media (min-width: 979px) {
+
+#midCol, .affix-top {
+  position: fixed;
+  //    width:265px;
+  margin-right: 0px;
+  top: 25%;
+  //  bottom: 0;
+
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+
+  transform-origin: right bottom 0;
+
+  @media (max-width: 768px) {
+    top: 85%;
+    margin-bottom: 0px;
+
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform-origin: right bottom 0;
+
+  }
+
+  right: 0;
+  z-index: 999;
+
+}
+
+#midCol.affix {
+  position: static;
+  width: 100%;
+}
+
+//}
+
+/* style.css */
+/* ANIMATION STYLINGS
+============================================================================= */
+//#signup-form            { position:relative; min-height:300px; overflow:hidden; padding:30px; }
+
+.signup-form {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  //padding: 15px 40px;
+  padding: 15px 15px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+}
+
+.form-views {
+  width: auto;
+}
+
+//updates
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: -20px;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+.form-views.ng-enter,
+.form-views.ng-leave {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+}
+
+/* enter animation */
+.form-views.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease;
+  -moz-animation: slideInRight 0.5s both ease;
+  animation: slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+.form-views.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease;
+  -moz-animation: slideOutLeft 0.5s both ease;
+  animation: slideOutLeft 0.5s both ease;
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+//
+///* ANIMATION STYLINGS
+//============================================================================= */
+//.signup-form {
+//  position: relative;
+//  min-height: 550px;
+//  overflow: hidden;
+//  padding: 15px 40px;
+//
+//  @media (max-width: 768px) {
+//    padding: 15px;
+//  }
+//}
+//
+//.form-views {
+//  width: auto;
+//}
+//
+///* basic styling for entering and leaving */
+///* left and right added to ensure full width */
+//.form-views.ng-enter,
+//.form-views.ng-leave {
+//  position: absolute;
+//  left: 30px;
+//  right: 30px;
+//  transition: 0.5s all ease;
+//  -moz-transition: 0.5s all ease;
+//  -webkit-transition: 0.5s all ease;
+//}
+//
+///* enter animation */
+//.form-views.ng-enter {
+//  -webkit-animation: slideInRight 0.5s both ease;
+//  -moz-animation: slideInRight 0.5s both ease;
+//  animation: slideInRight 0.5s both ease;
+//}
+//
+///* leave animation */
+//.form-views.ng-leave {
+//  -webkit-animation: slideOutLeft 0.5s both ease;
+//  -moz-animation: slideOutLeft 0.5s both ease;
+//  animation: slideOutLeft 0.5s both ease;
+//}
+//
+///* ANIMATIONS
+//============================================================================= */
+///* slide out to the left */
+//@keyframes slideOutLeft {
+//  to {
+//    transform: translateX(-200%);
+//  }
+//}
+//
+//@-moz-keyframes slideOutLeft {
+//  to {
+//    -moz-transform: translateX(-200%);
+//  }
+//}
+//
+//@-webkit-keyframes slideOutLeft {
+//  to {
+//    -webkit-transform: translateX(-200%);
+//  }
+//}
+//
+///* slide in from the right */
+//@keyframes slideInRight {
+//  from {
+//    transform: translateX(200%);
+//  }
+//  to {
+//    transform: translateX(0);
+//  }
+//}
+//
+//@-moz-keyframes slideInRight {
+//  from {
+//    -moz-transform: translateX(200%);
+//  }
+//  to {
+//    -moz-transform: translateX(0);
+//  }
+//}
+//
+//@-webkit-keyframes slideInRight {
+//  from {
+//    -webkit-transform: translateX(200%);
+//  }
+//  to {
+//    -webkit-transform: translateX(0);
+//  }
+//}
+//
+//
+//
+//second-animation option
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+
+//.well[ui-view]{
+//  height: 65px;
+//}
+//
+//.ui-view-container {
+//  position: relative;
+//}
+//
+//.form-steps.ng-enter, .form-steps.ng-leave {
+//  position: absolute;
+//  left: 0;
+//  right: 0;
+//  -webkit-transition:all .5s ease-in-out;
+//  -moz-transition:all .5s ease-in-out;
+//  -o-transition:all .5s ease-in-out;
+//  transition:all .5s ease-in-out;
+//}
+//
+//.form-steps.ng-enter {
+//  opacity: 0;
+//  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+//  -moz-transform:scale3d(0.5, 0.5, 0.5);
+//  transform:scale3d(0.5, 0.5, 0.5);
+//}
+//
+//.form-steps.ng-enter-active {
+//  opacity: 1;
+//  -webkit-transform:scale3d(1, 1, 1);
+//  -moz-transform:scale3d(1, 1, 1);
+//  transform:scale3d(1, 1, 1);
+//}
+//
+//.form-steps.ng-leave {
+//  opacity: 1;
+//  -webkit-transform:translate3d(0, 0, 0);
+//  -moz-transform:translate3d(0, 0, 0);
+//  transform:translate3d(0, 0, 0);
+//}
+//
+//.form-steps.ng-leave-active {
+//  opacity: 0;
+//  -webkit-transform:translate3d(100px, 0, 0);
+//  -moz-transform:translate3d(100px, 0, 0);
+//  transform:translate3d(100px, 0, 0);
+//}
+
+/*
+Sidebar Mortgage Form
+*/
+
+.mortgage-theme {
+  background-color: #6E3693;
+  background-image: linear-gradient(-180deg, #2BA28E 11%, #6E3693 76%);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2BA28E 11%, #6E3693 76%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #2BA28E), color-stop(76%, #6E3693));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2BA28E 11%, #6E3693 76%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2BA28E 11%, #6E3693 76%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2BA28E 11%, #6E3693 76%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2BA28E 11%, #6E3693 76%);
+  /* W3C */
+
+  border: 1px solid #9B9B9B;
+  border-radius: 4px;
+}
+
+.mortgage-theme-blue {
+  background-image: linear-gradient(90deg, #2BA28E 11%, #57a9cf 76%);
+  background-color: #57a9cf;
+}
+
+.mortgage-theme-primary {
+  background-image: linear-gradient(90deg, #2BA28E 11%, #6E3693 76%);
+  background-color: #2BA28E;
+}
+
+.sidebar-form {
+
+  form {
+    overflow: hidden;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  .mortgage-theme;
+  overflow: hidden;
+  //padding: 15px 40px;
+  padding: 0px 15px;
+
+  //@media (max-width: 768px) {
+  //  padding: 15px;
+  //}
+  color: white;
+  input, select, button, a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+  .info-text {
+    color: #d1d1d1;
+  }
+
+  .postcode-row {
+    input, select, button, a {
+      margin: 0 0 0 0;
+    }
+
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.input-lg + .form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  margin-right: 10px;
+}
+
+.provider-logo-box {
+  //border: 1px solid #d1d1d1;
+  //border-radius: 4px;
+
+  img {
+    //border: 1px solid #ffeaff;
+    //border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    //width: 100%;
+    //height: 100%;
+
+    @media (max-width: 768px) {
+      //width: 50px;
+    }
+
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #6f6f6f;
+  }
+}
+
+.secure-mortgage-header {
+  .glyphicon {
+    color: #CCCCCC;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 23px;
+    @media (max-width: 1028px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}
+
+// Place holder support
+.hasPlaceholder {
+  color: #777;
+}
+
+.number-to-call {
+  margin-bottom: 10px;
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .glyphicon {
+    font-size: 56px;
+    /* Fill 157: */
+    color: #FFC905;
+    @media (max-width: 768px) {
+      font-size: 38px;
+    }
+  }
+  .description {
+    margin-bottom: 5px;
+    color: #743A95;
+    font-size: 14px;
+  }
+  .number {
+    //font-size: 26px;
+    /* 08081 320 093: */
+    font-family: AsapBold, Helvetica, sans-serif;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+    font-size: 32px;
+    color: #743A95;
+    font-weight: bolder;
+  }
+}
+
+//Mortgage Calculator
+
+.mortgage-calculator {
+
+  .resultPane{
+    h1:not(:first-child){
+      margin-top: 5px;
+    }
+  }
+
+  .signup-form {
+
+    h1{
+      margin-top: 0px;
+    }
+
+    .form-group label {
+      /* Your income (Gross p: */
+      font-family: HelveticaNeue;
+      font-size: 28px;
+      color: #743A95;
+      line-height: 34px;
+      padding-bottom: 5px;
+    }
+    h2 {
+      /* How much can i Borro: */
+      font-family: ArialMT;
+      font-size: 44px;
+      color: #743A95;
+      line-height: 40px;
+    }
+  }
+  .sidebar-form {
+    h1, h2, h3, h4 {
+      color: white;
+    }
+
+    button {
+      border-radius: 5px;
+      background: #ffc905;
+      border: 1px solid #EEA236;
+      color: #743a95;
+      font-family: AsapBold, Helvetica, sans-serif;
+      font-size: 22px;
+      line-height: 28px;
+      max-width: none;
+      max-height: none;
+      min-width: inherit;
+      min-height: inherit;
+      padding: 10px 16px;
+    }
+
+    .amount {
+      /* £150,09: */
+      font-family: Asap-Bold;
+      font-size: 48px;
+      color: #FFC905;
+      line-height: 51px;
+    }
+  }
+}
+
+.calculators-sidebar{
+  .panel{
+    text-align: center;
+    h2{
+      text-align: center;
+      margin-top: 0;
+    }
+    p{
+      text-align: center;
+    }
+  }
+}

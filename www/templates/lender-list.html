@@ -1,0 +1,29 @@
+<div class="row listing">
+    <div class="col-md-12">
+        <h1>Other {{ lenderList[0].productType }} Lenders</h1>
+        <hr>
+    </div>
+    <div class="col-md-3 col-sm-3 " ng-repeat-start="item in lenderList">
+
+        <a target="_blank" ng-href="{{ item.link }}" data-popover="true" data-html=true data-title="{{ item.provider }}" data-content="
+        <a href='{{ item.link }}' target='blank' >
+            <strong>Representative APR:</strong> {{ item.representativeApr }}<br>
+            <strong>Max Loan Amount:</strong> {{ item.maxLoanAmount }}<br>
+            <strong>Max Term:</strong> {{ item.maxTerm }}<br>
+         </a>
+        ">
+            <div class="well text-center">
+                <div class="channel-logo">
+                    <img class="img-responsive" ng-src="{{ item.imageUrl }}">
+                    <div>
+                        <!--<small>{{ item.provider}}</small>-->
+                    </div>
+                </div>
+                <!--<small>{{ item.title }}</small>-->
+                <!--<small>{{ item.provider}}</small>-->
+            </div>
+        </a>
+    </div>
+    <div class="clearfix" ng-if="$index%3==3"></div>
+    <div ng-repeat-end=""></div>
+</div>

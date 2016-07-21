@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>Shared Ownership Mortgages – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="Find the best shared ownership mortgage properties and schemes in the UK and only pay a 5% deposit!">
+    <meta name="keywords" content="Shared Ownership Mortgages">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="/libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="/libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="/libs/xdomain/dist/0.6/xdomain.min.js"
+            slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="formApp">
+
+<!--<div class="scroll-top page-scroll affix-top">-->
+    <!--<a class="btn btn-warning btn-lg form-apply" href="/mortgage.html#mortgageform">-->
+        <!--Compare Quotes Now <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right "></i>-->
+    <!--</a>-->
+<!--</div>-->
+
+<div class="container wrapper">
+<div id="header"></div>
+<div class="breadcrumb hidden-xs hidden-sm">
+    You are here » <a href="../index.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../mortgages/shared-ownership-mortgages.html">Shared Ownership Mortgages</a>
+</div>
+<section class="side-collapse-container">
+    <div class="row main-centre hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="jumbotron BG-purple">
+                <div class="row">
+                    <div class="col-md-4 text">
+                        <h1><strong><span class='replace-seed-value'>Shared Ownership Mortgages</span></strong></h1>
+                    <h2>Best Shared Ownership Mortgages and Schemes in the UK</h2>
+                        <img class="hidden" src="../images/5-star-large.png">
+                    </div>
+                    <div class="col-md-8 slider-image">
+                        <img class="img-responsive pull-right hidden-sm hidden-xs"
+                             src="../images/new-banners/SharedMortgage-Website-Banner-3.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="BG-purple purple-Bar text-center mortgage-theme-primary" align="center">
+                <h2 class="text-center"><strong><span>Let us find you the Best Shared Ownership Mortgages</span></strong></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-controller="mortgageController">
+        <div class="col-md-4 left-sidebar">
+            <img class="img-responsive hidden-md hidden-lg" src="/mortgages/images/mortgage-mobile.png">
+            <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+            <div id="mortgage-calculator"></div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-mortgage.html">Buy to Let
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/remortgage-deals.html">Remortgage Deals</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/second-charge-mortgage.html">Second
+                                Charge Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                Ownership Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                Mortgages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Useful Information</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                to save money on your mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                arrears help</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                Glossary</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                happens if you cannot repay your mortgage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 right-sidebar">
+            <div class="row center-table">
+                <div class="col-md-12">
+                    <img class="img-responsive hidden-xs hidden-sm" src="/mortgages/images/mortgage-desktop.png">
+                </div>
+                <div ng-include src="'/templates/mortgage-providers.html'"></div>
+                <div class="col-md-12 ">
+                    <h2>What is a shared ownership mortgage?</h2>
+
+                    <p>Shared ownership mortgages allow you to part-buy and part-rent your home from a local housing
+                        association. It works by purchasing a ‘share’ of your chosen property of usually 25% to 75% and
+                        then paying rent to the housing association for the remaining share that you do not own. When
+                        compared to putting down a 25% deposit on a typical mortgage, a shared ownership mortgage allows
+                        you to put down only 5% of the value of the property which is why it is a very popular solution
+                        to affordable housing.</p>
+
+                    <h2>Shared ownership mortgage example</h2>
+
+                    <p>With a typical 5% deposit, you will only have to put down an initial £10,000 if your property is
+                        valued at £200,000. This is significantly lower than a typical deposit of 25%, which would
+                        equate to £50,000. Those that take part in a shared ownership mortgage will also be required to
+                        pay rent to the housing association of 3% a year which in this example would be around £6,000
+                        per annum. Tenants will also be required to pay a service charge on a monthly basis, which will
+                        vary between properties.</p>
+
+                    <h2>Shared ownership properties</h2>
+
+                    <p>Shared ownership properties are ideal for affordable housing and for those that cannot afford to
+                        buy a property or put down a big deposit. A shared ownership mortgage is one of the most
+                        affordable ways to get on the property ladder in the UK and be able to afford a larger property
+                        than you would otherwise. All shared ownership properties are leasehold properties lasting a
+                        fixed period of 99 years.</p>
+
+                    <p>A further advantage is that if you can generate savings over time, you can purchase more shares
+                        in the property from the housing association. Buying more shares in the property is known as <a
+                                href="http://www.originhousing.org.uk/buy/faqitem-51-what-is-staircasing.aspx"
+                                target="_new">‘staircasing’</a> and can eventually lead to the individual owning the
+                        property outright. Each time you apply to buy more shares in the property, the housing
+                        association will value the property again so depending on the current market rates, the price of
+                        the shares may be cheaper or more expensive to buy.</p>
+
+                    <h2>Where can I find shared ownership mortgage lenders and</h2>
+
+                    <p>Shared ownership mortgage schemes are typically available through housing associations as
+                        mentioned, but also government schemes and banks. The most common scheme is known as <a
+                                href="http://www.helptobuy.org.uk/" target="_new">Help to Buy</a> and other well-known
+                        participating banks include Nationwide, Halifax and Santander.</p>
+
+                    <p>Quiddi Compare has made finding the best shared ownership mortgage scheme much easier. By simply
+                        providing your details above, one of dedicated advisors will call you to help find the best deal
+                        for you. We consider your history and affordability and then choose from one of our partners to
+                        find you the cheapest offer available. We work with some of the leading mortgage providers in
+                        the UK and we are constantly on the look out for new deals with our customers in mind. The
+                        mortgage application is completely free to use and we won’t pass your details to any third
+                        companies. We simply take a small commission from the mortgage company you decide to choose and
+                        this allows us to keep our service free for our customers forever.</p>
+
+                    <h2>Am I eligible for a shared ownership mortgage scheme?</h2>
+
+                    <p>To be eligible, you must be able to put down a minimum of 5% of the value of your desired
+                        property. So having savings and a good source of income and employment will allow you to pay the
+                        deposit and also pay for the rent to the housing association.</p>
+
+                    <p>Otherwise, you need to show that you are a candidate for affordable housing. If you are a
+                        financial position to afford your own property then you will not be eligible. For instance, you
+                        must have a minimum household income of £60,000 or less otherwise you would probably be able to
+                        put down a larger deposit than 5%. You could be a first-time buyer looking to get on the
+                        property ladder or perhaps you are currently a homeowner who cannot afford to buy. Other
+                        individuals that are eligible are those currently renting from a housing association already but
+                        now have enough savings to put down a deposit on a property.</p>
+
+                    <p>To see if you can afford a shared ownership mortgage, <a
+                            href="http://www.newlonhomeownership.co.uk/buying-information/mortgage-calculator/"
+                            target="_new">you can use a mortgage calculator</a> to enter your income and the value of
+                        the property.</p>
+
+                    <h2>Frequently asked questions about shared ownership mortgages</h2>
+
+                    <h3>How is shared ownership mortgage different to a shared equity scheme?</h3>
+
+                    <p>A shared equity scheme is where the mortgage provider offers you a lower interest rate on part of
+                        the mortgage that you cannot afford. This is different to a shared ownership mortgage where you
+                        pay a small deposit to earn 25-75% but also pay rent to the housing association for the shares
+                        that you don’t own.</p>
+
+                    <h3>How do I sell my property?</h3>
+
+                    <p>If you own 100% of the property because you have used staircasing to buy more and more shares,
+                        they you can sell the property but the housing association or bank has first option to buy it
+                        back, within the first 21 years of the contract. If you do not own 100% of the property, you
+                        must ask the housing association for permission if you are looking to sell.</p>
+
+                    <h3>Can I make repairs to the property?</h3>
+
+                    <p>Yes, you will require permission from the housing association or bank. The provider may find that
+                        home improvements may add value to the property but needs to check the budget and ensure that
+                        the repairs are in the property’s best interests.</p>
+                </div>
+                <div class="col-md-12">
+                    <hr>
+                    <p class="small text-center">
+                        THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT.<br>
+                        Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other services they provide. MAKE SURE you check with the company before agreeing to any service if they charge you a fee and what the terms are.<br>
+                        Warning: Late repayment can cause you serious money problems. For help, go to moneyadviceservice.org.uk
+                        QuiddiCompare does not charge a fee and does not provide any financial advice relating to mortgages. However we may on occasion receive commissions from IFA’s and mortgage providers, brokers and intermediaries for introducing you to them.<br>
+                        The content of this site is meant to be informational, and it should not be considered financial advice. - See more at: <a target="_blank" href="https://quiddicompare.co.uk/mortgages">quiddicompare.co.uk/mortgages</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+</div>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/raven-js/dist/raven.js"></script>
+<script>
+    Raven.config('https://1afb1d3a2d7141519c638708c53ed4e2@monitor.quiddiportal.com/13', {
+        // pass along the version of your application
+        // release: '1.0.0',
+
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+//        whitelistUrls: ['example.com/scripts/']
+
+    }).install();
+    Raven.isSetup();
+
+    //    Raven.wrap({logger: "formApp"}, function(){ });
+    //    Raven.captureMessage('Broken!', {tags: { key: "value" }});
+    //    Raven.captureException(e, {extra: { foo: "bar" }})
+</script>
+
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../js/main.js"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!-- form-profile.html -->
+<div ng-form="identityForm">
+<h2><strong>Ok, just confirm your details</strong></h2><h2> Don’t worry your data is fully protected: we value your privacy!</h2>
+<br>
+
+<div class="row form-group">
+        <div class="col-md-9">
+            <div ng-class="{ 'has-success has-feedback': identityForm.firstname.$valid }">
+                <div class="input-group">
+                    <label class="sr-only" for="firstname"></label>
+                    <div class="input-group-addon">First Name</div>
+                    <input ng-model="formData.first_name" type="text" class="form-control input-lg" name="firstname" id="firstname"
+                           placeholder="Your First Name" required>
+                    <span ng-show="identityForm.firstname.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div ng-show="identityForm.firstname.$dirty">
+                    <p ng-show="identityForm.firstname.$error.required" class="alert alert-warning">First name is required.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group input-block-level">
+                <label class="sr-only" for="DOBday"></label>
+                <select ng-model="formData.title" ng-options="title.option for title in titles" class="form-control input-lg" name="title" id="title">
+                    <option value="">Title</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+<!--<div class="form-group" ng-class="{ 'has-success has-feedback': identityForm.firstname.$valid }">-->
+        <!--<div class="input-group">-->
+            <!--<label class="sr-only" for="firstname"></label>-->
+            <!--<div class="input-group-addon">First Name</div>-->
+            <!--<input ng-model="formData.first_name" type="text" class="form-control input-lg" name="firstname" id="firstname"-->
+                   <!--placeholder="Your First Name" required>-->
+            <!--<span ng-show="identityForm.firstname.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>-->
+        <!--</div>-->
+    <!--<div ng-show="identityForm.firstname.$dirty">-->
+        <!--<p ng-show="identityForm.firstname.$error.required" class="alert alert-warning">First name is required.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': identityForm.lastname.$valid }">
+        <div class="input-group">
+            <label class="sr-only" for="lastname"></label>
+            <div class="input-group-addon">Last Name</div>
+            <input ng-model="formData.last_name" type="text" class="form-control input-lg" name="lastname" id="lastname"
+                   placeholder="Your Last Name" required>
+            <span ng-show="identityForm.lastname.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        </div>
+    <div ng-show="identityForm.lastname.$dirty">
+        <p ng-show="identityForm.lastname.$error.required" class="alert alert-warning">Last name is required.</p>
+    </div>
+    </div>
+
+<div class="form-group row">
+        <div class="col-md-12"><label>Date of Birth</label></div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOBday"></label>
+                    <select ng-model="formData.db.day" ng-options="day for day in days" class="form-control input-lg" name="DOBday" id="DOBday" required>
+                        <option value="">Day</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOBmonth"></label>
+                    <select ng-model="formData.db.month" ng-options="month.str for month in months" class="form-control input-lg" name="DOBmonth" id="DOBmonth" required>
+                        <option value="">Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOByear"></label>
+                    <select ng-model="formData.db.year" ng-options="year for year in years" class="form-control input-lg" name="DOByear" id="DOByear" required>
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+</div>
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': identityForm.email.$valid }">
+    <div class="input-group">
+        <label class="sr-only" for="email"></label>
+        <div class="input-group-addon">Email Address</div>
+        <input ng-model="formData.email" ng-blur="validate=true" type="email" class="form-control input-lg" name="email" id="email" placeholder="example@domain.com" required>
+        <span ng-show="identityForm.email.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    </div>
+
+    <div ng-show="identityForm.email.$invalid && validate">
+        <p ng-show="identityForm.email.$error.required" class="alert alert-danger">Email is required.</p>
+        <p ng-show="identityForm.email.$error.email" class="alert alert-danger">Please, enter a correct email.</p>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-1  col-xs-2 ">
+        <a ui-sref="form.status" class="btn btn-block form-back">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        </a>
+    </div>
+    <div class="col-md-6 col-md-offset-5 col-xs-10">
+        <a ui-sref="form.personal" class="btn btn-block btn-lg btn-warning form-apply" ng-disabled="!identityForm.$valid" analytics-on analytics-event="Mortgage" analytics-category="Mortgage" analytics-label="5Identity">
+            Continue <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+         aria-valuemax="100" style="width: 95%;">
+        95% Complete
+    </div>
+</div>
+</div>

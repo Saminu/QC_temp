@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <title class='replace-seed-value'>Interest Only Mortgages – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Looking for interest only mortgages? We compare the best interest only mortgage rates in the UK">
+    <meta name="keywords" content="Interest only mortgages" >
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="../libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="../libs/xdomain/dist/0.6/xdomain.min.js" slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="formApp">
+
+<!--<div class="scroll-top page-scroll affix-top">-->
+    <!--<a class="btn btn-warning btn-lg form-apply" href="/mortgage.html#mortgageform">-->
+         <!--Compare Quotes Now <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right "></i>-->
+    <!--</a>-->
+<!--</div>-->
+
+<div class="container wrapper">
+<div id="header"></div>
+    <div class="breadcrumb hidden-xs hidden-sm">
+        You are here » <a href="../index.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+    </div>
+<section class="side-collapse-container">
+<div class="row main-centre hidden-xs hidden-sm">
+    <div class="col-md-12">
+        <div class="jumbotron BG-purple">
+            <div class="row">
+                <div class="col-md-4 text">
+                    <h1><strong><span class='replace-seed-value'>Interest Only Mortgages</span></strong></h1>
+                    <h2>Compare the best Interest Only Mortgages in the UK</h2>
+                    <img class="hidden" src="../images/5-star-large.png">
+                </div>
+                <div class="col-md-8 slider-image">
+                    <img class="img-responsive pull-right hidden-sm hidden-xs" src="../images/new-banners/Interestonly-Website-Banner.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row hidden-xs hidden-sm">
+    <div class="col-md-12">
+        <div class="BG-purple purple-Bar text-center mortgage-theme-primary">
+            <h2 class="text-center"><strong><span>Interest only Mortgages Comparison</span></strong></h2>
+        </div>
+    </div>
+</div>
+
+    <div class="row" ng-controller="mortgageController">
+        <div class="col-md-4 left-sidebar">
+            <img class="img-responsive hidden-md hidden-lg" src="/mortgages/images/mortgage-mobile.png">
+            <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+            <div id="mortgage-calculator"></div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-mortgage.html">Buy to Let
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/remortgage-deals.html">Remortgage Deals</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/second-charge-mortgage.html">Second
+                                Charge Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                Ownership Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                Mortgages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Useful Information</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                to save money on your mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                arrears help</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                Glossary</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                happens if you cannot repay your mortgage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 right-sidebar">
+
+            <div class="row center-table">
+                <div class="col-md-12">
+                    <img class="img-responsive hidden-xs hidden-sm" src="/mortgages/images/mortgage-desktop.png">
+                </div>
+                <div ng-include src="'/templates/mortgage-providers.html'"></div>
+                <div class="col-md-12">
+                    <h2>What is an interest only mortgage?</h2>
+
+                    <p>An interest only mortgage means you only pay the interest part of your mortgage and then you repay the capital at the end of the mortgage term (such as 25 years) in one big lump sum.</p>
+
+                    <p>This is different to a typical mortgage repayment plan that consists of paying off the capital and interest together. The capital refers to the property or estate and the interest refers to the charges that you are paying to the lender. You will pay off the interest and capital together each month but in the early stages of the mortgage, you will pay back more interest than capital and then eventually you will be paying more capital than interest.</p>
+
+                    <h2>Best interest only mortgages</h2>
+
+                    <p>At Quiddi Compare, we compare the best rates for interest only mortgages in the UK. We constantly update our comparison table above with the latest deals to ensure our customers are getting the best rates available. Our comparison service is completely free to use and we will not take down any of your details and pass these onto other companies. Simply compare the different mortgages on offer and use the interest and LTV as a guide to finding the cheapest interest only mortgages. Once you have chosen the provider to suit your requirements, simply click on the name of the company and you will be taken directly to their site where you can make an enquiry.</p>
+
+                    <p>The lenders we work with offer the best interest only mortgages in the UK. By simply filling in our application form above, one of our representatives will get in touch and provide a mortgage deal based on your requirements. This very personalized service will take into account the lowest interest rates and best loan-to-value to ensure you get the right deal for you. We are thrilled to offer this service to the customer for free because we only take a fee from the mortgage provider if your loan goes ahead.</p>
+
+                    <h2>The advantages of interest only mortgages</h2>
+
+                    <p>The best thing about interest only mortgages is that it is the cheapest way to pay for a property in the short run. Since you are only paying the interest of the loan, you are paying small payments each month in return for owning a property. This approach is very popular for first time buyers who don’t have big savings and can only afford to pay small amounts each month and it allows them to enjoy the property for years to come at minimal cost.</p>
+
+                    <h3>The disadvantages of interest only mortgages</h3>
+
+                    <p>The downside of an interest only mortgage is that it does not actually reduce your debt because you will still be required to pay the capital at the end of the mortgage term. This leads to one hefty one lump sum repayment at the end of the mortgage period and borrowers are encouraged to put together an investment or savings plan in order to make the final repayment. The lender will typically need to assess your financial situation carefully and see evidence of a savings plan before proceeding.</p>
+
+                    <p>Some consider the interest only mortgage to be quite risky because you are putting off repayment for a long time in the future. As a borrower, you will have to be responsible to keep saving money in order to fulfill the final repayment. Sadly, the number of interest only mortgaged being offered over the years has reduced significantly as financial institutions have raised concerns that consumers may not have repayment plans in place and therefore won’t be able to pay the capital at the end of the term.</p>
+
+                    <h2>Repayment Mortgages – The Alternative</h2>
+
+                    <p>A repayment mortgage is the alternative to an interest free mortgage and incorporates the traditional method of repaying off the interest and capital at the same time. Initially, you will pay more interest and less capital but as you rear towards the end of the mortgage term, you will be paying less interest by more capital.</p>
+
+                    <p>Overall with a repayment mortgage you pay less interest than you would for an interest free mortgage because the capital is gradually reducing and the interest is not accruing as much.</p>
+
+                    <p>Mortgages are portable meaning that they can be transferred to different products and repayment terms. One way to manage an interest only mortgage better is to pay as normal and once you are in a better financial situation, to switch to a repayment mortgage. By switching to a repayment mortgage, you will be able to pay off the capital as normal and avoid the large payment at the end of the mortgage term. Also, if you have plans to remortgage, you would have paid off more capital so you will be able to access a mortgage with a lower LTV and a lower interest rate.</p>
+
+                </div>
+                <div class="col-md-12">
+                    <hr>
+                    <p class="small text-center">
+                        THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT.<br>
+                        Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other services they provide. MAKE SURE you check with the company before agreeing to any service if they charge you a fee and what the terms are.<br>
+                        Warning: Late repayment can cause you serious money problems. For help, go to moneyadviceservice.org.uk
+                        QuiddiCompare does not charge a fee and does not provide any financial advice relating to mortgages. However we may on occasion receive commissions from IFA’s and mortgage providers, brokers and intermediaries for introducing you to them.<br>
+                        The content of this site is meant to be informational, and it should not be considered financial advice. - See more at: <a target="_blank" href="https://quiddicompare.co.uk/mortgages">quiddicompare.co.uk/mortgages</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+</div>
+
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/raven-js/dist/raven.js"></script>
+<script>
+    Raven.config('https://1afb1d3a2d7141519c638708c53ed4e2@monitor.quiddiportal.com/13', {
+        // pass along the version of your application
+        // release: '1.0.0',
+
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+//        whitelistUrls: ['example.com/scripts/']
+
+    }).install();
+    Raven.isSetup();
+
+    //    Raven.wrap({logger: "formApp"}, function(){ });
+    //    Raven.captureMessage('Broken!', {tags: { key: "value" }});
+    //    Raven.captureException(e, {extra: { foo: "bar" }})
+</script>
+
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../js/main.js"></script>
+
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec=document.createElement('SCRIPT');
+    scRec.type='text/javascript';
+    scRec.src="//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

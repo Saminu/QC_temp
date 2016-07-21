@@ -1,0 +1,527 @@
+/* --------------------------------------------------------------------------------------------------------------------------
+www.quiddicompare.co.uk
+Copyright 2012 Quiddi Limited.
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/* General */
+
+html, body {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  margin: 0 0;
+  padding:  0 0;
+  font-family:  Arial, Helvetica, sans-serif;
+  background: url(//quiddicompare.co.uk/images/shadow-bg.jpg) repeat-y center top #F1F1F1;
+  color: #666;
+}
+
+h1 {
+  padding: 8px 0;
+  color:#6b2992;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-weight:  normal;
+  line-height:28px;
+  font-size:24px;
+  margin:0 0;
+}
+
+h2 {
+  margin: 0px;
+  padding:8px 0;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size:20px;
+  font-weight:  normal;
+  color:#6b2992;
+  line-height:normal;
+}
+
+h3, h4 {
+  margin: 0px;
+  padding: 8px 0;
+  font-size:16px;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0px;
+  padding: 8px 0;
+  list-style: none;
+  font-weight: normal;
+}
+
+p {
+  line-height: 20px;
+  font-size: 13px;
+  margin: 0px;
+  padding: 8px 0;
+  list-style: none;
+  color:#777;
+}	
+
+p.small{ 
+  font:normal 11px/11px Arial, Helvetica, sans-serif;
+  margin:0 0 ;
+  padding:0 0;
+}
+
+a {
+  color: #666;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#6b2992;
+}
+
+a img {
+  border: none;
+}
+
+.clear{
+  clear:both;
+  padding:0 0;
+  margin:0 0;
+}
+
+strong{
+  font-weight:bold;
+}
+
+/** WRAPPER */
+
+#wrapper {
+  width: 940px;
+  margin: 0px auto;
+  background-color:#FFFFFF;
+  padding:0 20px;
+}
+
+#wrapper-bgbtm {
+  background: url(https://quiddicompare.co.uk/images/bg1_03.jpg) repeat-x left bottom;
+}
+
+/** HEADER */
+
+#header {
+  height: 103px;
+  padding: 0 0;
+}
+
+/** HEADER TOP */
+
+#headertop {
+  height: 70px;
+  width: 940px;
+}
+
+#header-advert {
+ float:right;
+  margin:10px 0 0 0 ;
+  padding:0 0;
+  width:468px;
+  height: 55px;
+}
+
+
+/** DATE */
+
+#date {
+  float:right;
+  margin-top:35px;
+  margin-right:25px;
+  font-size:11px;
+}
+
+/** LOGO */
+
+.logo {
+  float:left;
+  margin-top:20px;
+  margin-left:15px;
+}
+
+
+/** BREADCRUMB */
+
+#breadcrumb{
+  clear:both;
+  background: url(https://quiddicompare.co.uk/images/bread-crumb-bg.jpg) repeat-x top center;
+  background-color:#F1F1F1;
+  font-size: 11px;
+  padding: 15px 0px 5px 10px;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */		
+}
+
+.bc-active{
+  color:#6b2992;
+}
+
+/** MAIN IMAGE*/
+
+#main {
+  height: 182px;
+  width: 940px;
+  margin-top:10px;
+}
+
+/** CENTRE PAGE*/
+
+#page {
+  width:940px;
+}
+
+#pagetop {
+  width:940px;
+  height:420px;
+}
+
+#pagetop div.left {
+  float:left;
+  width:400px;
+}
+
+#pagetop p{
+  font-size:16px;	
+  line-height:22px;
+}
+
+/** CENTRE CONTENT */
+
+#centrepart{
+	float: right;
+	width: 660px;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
+/** MAIN IMAGE*/
+
+#main-centre {
+  height: 100%;
+  width: 940px;
+  background: url(https://quiddicompare.co.uk/images/advantages-bg.jpg) repeat-x bottom center;
+  border:1px solid #CCC;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+  margin:10px 0;
+  padding:0 0 ;
+}
+
+#main-centre div.left {
+  width:500px;
+  padding:20px 0 0 20px;
+}
+
+#main-centre div.left p{
+  font-size:22px;
+  padding: 0 0;
+  margin-top:10px;
+}
+
+#main-centre div.left h1{
+  padding: 0 0;
+  line-height:24px;
+  font-size:28px;
+  margin:0 0;
+}
+
+#main-centre div.left p.large{
+  font-size:30px;
+  line-height:34px;
+}
+
+.advert {
+  float:right;
+  margin:0 0 ;
+  padding:0 0;
+  width:625px;
+  height: 240px;
+}
+
+#main-centre div.left .star {
+  margin-bottom:15px;
+}
+
+#main-image {
+	float: right;
+	text-align: left;
+	margin-top: 40px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+#main-centre div.left p.apr-small{
+  line-height: 20px;
+  font-size: 18px;
+  color:#777;
+}
+
+#main-centre div.left p span.apr-large{
+  line-height: 44px;
+  font-size: 36px;
+  color:#777;
+}
+
+  
+/** TABLE*/
+
+ div.table{
+	margin:20px 0 20px 0;
+}
+
+table { 
+  font:normal 12px/12px Arial, Helvetica, sans-serif; 
+  text-align:center; 
+  color:#777;
+  vertical-align:middle;
+  border-collapse: collapse;
+  padding:0 0;
+  margin:0 0 ;
+}
+
+table span { 
+  font:bold 18px/18px Arial, Helvetica, sans-serif;
+  letter-spacing:-1px;
+}
+
+table p.small-example{ 
+  font:normal 10px/10px Arial, Helvetica, sans-serif;
+  color:#AAA;
+  margin:0 0 ;
+  padding-top:6px;
+  width:100px;
+}
+
+table span.provider-name{ 
+  font:normal 11px/11px Arial, Helvetica, sans-serif;
+  margin-top:2px;
+  letter-spacing:0px;
+  display:block;
+}
+
+.sortheader{
+  text-align:center;
+  padding:0 0;
+  margin:0 0 ;	
+  color:#6b2992; 
+}
+
+.sortarrow{
+  padding:0 0;
+  margin:0 0 ;
+}
+
+td { 
+	padding:10px; 
+	border:1px solid #CCC;
+}
+
+td.representative { 
+  background-color:#eef8fe; 
+  font:normal 11px/11px Arial, Helvetica, sans-serif;
+}
+
+tr {
+  border-bottom:1px solid #CCC;
+}
+
+th {
+  background:url(https://quiddicompare.co.uk/images/table-head-bg.jpg) #f7f7f7 repeat-x bottom;
+  padding:10px; 
+  color:#6b2992; 
+  height:20px;
+  border:1px solid #CCC;
+}
+
+.apply{
+  color:#FFFFFF;
+  display:block;
+  font-size:13px;
+  line-height:32px;
+  height:40px;
+  width:90px;
+  text-align:center;
+  background:url(https://quiddicompare.co.uk/images/apply-now-btn.png) no-repeat 0 0;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */	
+}
+
+.apply:hover{
+  color:#FFFFFF;
+  text-decoration:none;
+  background:url(https://quiddicompare.co.uk/images/apply-now-btn.png)  no-repeat 0 -40px;
+}
+
+a img {
+  border: 0;
+}
+
+/** LEFTPART */
+
+#leftpart{
+  width:260px;
+  display:block;
+  float:left;
+  padding:0 0;
+  margin:0 0;
+}
+
+#leftpart div.block{
+  border:1px solid #CCC;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+  margin-bottom:10px;
+}
+
+#leftpart div.block.padding{
+  padding:12px;
+  height:100%;
+  overflow:auto;
+}
+
+#leftpart div.block .heading {
+  font-size:16px;
+  margin:0 0 0 0 ;
+  line-height:20px;
+  padding:0 0 5px 0;
+  font-weight:bold;
+  color:#6b2992;
+}
+
+#leftpart div.block .heading a{
+  color:#6b2992;
+}
+
+#fl-right{
+  float:right;
+}
+
+#leftpart div.leftheading{
+  height:40px;
+  background:url(https://quiddicompare.co.uk/images/h2_bg.gif) no-repeat 0 0;
+  padding:5px 0 0px 25px;
+  font:normal 16px/40px Arial, Helvetica, sans-serif;
+  color:#FFFFFF;
+}
+
+#leftpart ul{
+  width:235px;
+  margin:0 0;
+  padding:0 10px 5px 10px;
+}
+
+#leftpart ul li{
+  border-bottom:1px dotted #CCC;
+  padding:6px 0;
+  height:100%;
+  overflow:auto;
+}
+
+#leftpart ul li .active{
+  color:#6b2992;
+}
+
+#leftpart ul li.last{
+  background:none;
+  border-bottom:none;
+}
+
+#leftpart ul li a{
+  font:normal 14px/18px Arial, Helvetica, sans-serif;
+  background:url(https://quiddicompare.co.uk/images/arrow.gif) no-repeat 2px 4px;
+  color:#999;
+  padding:0 0 0 15px;
+  text-decoration:none;
+}
+
+#leftpart ul li a:hover{
+  color:#666;
+}
+
+.card{
+  float:left;
+  padding:0 10px 6px 0;
+}
+
+
+
+/** LEFT PART ADVANTAGES*/
+
+#leftpart div.block.padding.advantage{
+  background: url(https://quiddicompare.co.uk/images/advantages-bg.jpg) repeat-x bottom center;
+  overflow:hidden;
+}
+
+ul#advantages{
+  padding:0 0 ;
+  margin:15px 0;
+  font:normal 12px/16px Arial, Helvetica, sans-serif;
+  color:#666;	
+}
+
+ul#advantages li{
+  border-bottom:none;
+  background:url(https://quiddicompare.co.uk/images/icon-advantage.gif) no-repeat 0px 0px;
+  color:#666;
+  padding:1px 0 0 24px;
+  margin:8px 0;	
+}
+
+/** FOOTER */
+
+#footer {
+  width: 940px;
+  background: url(https://quiddicompare.co.uk/images/footer-grey-bg.jpg) repeat-x top center;
+  height: 50px;
+  padding:0 0;
+  margin-bottom:10px;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */		
+}
+
+#footer div.container {
+  padding:17px 20px 0 0;
+  float:right;
+  text-align:right;
+  width:640px;
+  line-height:16px;
+  font-size: 11px;
+  color:#777;		
+}
+
+#footer span {
+  padding:0px 10px;
+}
+
+#footer .review {
+  padding:0px 0px;
+  font-size: 12px;
+}
+
+#footer div.smalllogo {
+  float:left;
+  height: 20px;
+  padding:15px 20px;
+}
+
+#footer div.smallprint{
+  float:left;
+  padding:15px 20px;
+}
+
+#footer div.smallprint p{
+  font-size: 11px;
+  line-height:14px;
+}

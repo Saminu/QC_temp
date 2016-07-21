@@ -1,0 +1,76 @@
+<!-- form-profile.html -->
+<div ng-form="amountForm">
+    <h1>Mortgage Rates From <span>1.95%*</span></h1>
+    <h1>Get a <strong>free Quote Now</strong></h1>
+    <hr>
+<h2>How much do you want to <strong>borrow</strong>?</h2>
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': amountForm.amount.$valid }">
+    <div class="input-group">
+        <label class="sr-only" for="amount"></label>
+        <div class="input-group-addon">Amount to Borrow?</div>
+
+        <select ng-model="formData.loan_amount" ng-options="amount.str for amount in amounts" class="form-control input-lg" name="amount" id="amount" required>
+            <option value="">-- Select --</option>
+        </select>
+    </div>
+    <div ng-show="amountForm.amount.$dirty">
+        <p ng-show="amountForm.amount.$error.required" class="alert alert-danger">Please select a valid amount</p>
+    </div>
+</div>
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': amountForm.pvalue.$valid }">
+    <div class="input-group">
+        <label class="sr-only" for="pvalue"></label>
+        <div class="input-group-addon">Property Value?</div>
+
+        <select ng-model="formData.property_value" ng-options="pvalue.str for pvalue in pvalues" class="form-control input-lg" name="pvalue" id="pvalue" required>
+            <option value="">-- Select --</option>
+        </select>
+    </div>
+    <div ng-show="amountForm.pvalue.$dirty">
+        <p ng-show="amountForm.pvalue.$error.required" class="alert alert-danger">Please select a valid Property Value</p>
+    </div>
+</div>
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': amountForm.mtype.$valid }">
+    <div class="input-group">
+        <label class="sr-only" for="mtype"></label>
+        <div class="input-group-addon">Mortgage Type?</div>
+
+        <select ng-model="formData.product_type" ng-change="showPostcode()" ng-options="mtype.option for mtype in mtypes" class="form-control input-lg" name="mtype" id="mtype" required>
+            <option value="">-- Select --</option>
+        </select>
+    </div>
+    <div ng-show="amountForm.mtype.$dirty">
+        <p ng-show="amountForm.mtype.$error.required" class="alert alert-danger">Please select a valid mortgage type</p>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-1  col-xs-2 ">
+        <!--<a ui-sref="form.start" class="btn btn-block form-back">-->
+            <!--<span class="glyphicon glyphicon-circle-arrow-left"></span>-->
+        <!--</a>-->
+    </div>
+    <div class="col-md-6 col-md-offset-5 col-xs-10 ">
+        <a ui-sref="form.profile" class="btn btn-block btn-lg btn-warning form-apply" ng-disabled="!amountForm.$valid" analytics-on analytics-event="Mortgage" analytics-category="Mortgage" analytics-label="2Amount">
+            Start <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+
+<div ng-show="amountForm.amount.$valid && amountForm.pvalue.$valid && amountForm.mtype.$valid" class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+        50% Complete
+    </div>
+</div>
+
+    <div ng-show="" class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+            20% Complete
+        </div>
+    </div>
+
+</div>

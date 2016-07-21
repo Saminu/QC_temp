@@ -1,0 +1,207 @@
+/* 
+  ------------------------------------------------
+    ------------------------------------------------
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555555;
+	background-color: #f1f1f1;
+	margin: 0px;
+	padding: 0px;
+	font-size:13px;
+	line-height:20px;
+	font-weight:normal;
+}
+img {vertical-align: bottom;}
+p
+{
+	margin: 7px 0px;
+	text-align: center;
+}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, 
+progress, section, source, video {display:block;}
+.zerogrid{ width: 942px; position: relative; margin: 0 auto; padding: 0; text-align:center;}
+
+.content-wrapper {
+	margin: 0px;
+	overflow: hidden;
+	padding:0px;
+	background:url(../images/body-bg.jpg) center top repeat-y #f1f1f1;
+}
+
+/* ------------------Content------------------- */
+#content {}
+#body-main { width:100%; height:auto; float:left; text-align:left;}
+.top
+{  width:98%; padding-left:2%; padding-top:15px; padding-bottom:18px; float:left; text-align:left;
+}
+.top img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+}
+.body-inside{ width:100%; height:auto; float:left; text-align:left;}
+#welcome{ height:auto; float:left; text-align:center; border:1px solid #cccccc; background:url(../images/welcome-box-bg.jpg) left bottom repeat-x #FFF; 
+padding-top:20px; padding-bottom:36px; padding-left:2%; padding-right:5%; width:92.5%; 	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+  }
+
+.welcome-left
+{
+	width:56%;
+	height:auto;
+	float:left;
+	text-align:left;
+	font-size:12px; line-height:30px; color: #666666; font-weight:normal; font-family:Arial, Helvetica, sans-serif;
+}
+.welcome-left img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+}
+.apply{ width:100%; height:auto; float:left; text-align:left; padding:14px 0px;} .apply ul { margin:0px; padding:0px; list-style-type:none;}
+.apply ul li { width:96%; height:auto; float:left; text-align:left; display:block; background:url(../images/icon-advantage.gif) left 7px no-repeat; padding-left:4%; font-size:12px; line-height:18px; padding-top:6px; padding-bottom:6px;}
+.apply-bottom-box { width:100%; height:auto; float:left; text-align:left;} .apply1-button { margin-bottom:15px;}
+.star-th { margin:0px 4px 10px 0px;} .plus-icon { margin-right:8px; float:left;}
+.welcome-right
+{
+	width:39%;
+	height:auto;
+	float:right;
+	text-align:right;
+	padding-top:20px;
+}
+.welcome-right img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+
+}
+.body-bottom-box { width:100%; height:auto; float:left; text-align:left; padding:20px 0px;}
+.benefit-box { width:24.60085%; height:auto; float:left; text-align:left; background:url(../images/welcome-box-bg.jpg) left bottom repeat-x #FFF; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding-top:10px; padding-bottom:10px; padding-left:1.5%; padding-right:1.5%; border:1px solid #cccccc;}
+
+.benefits{ width:100%; height:auto; float:left; text-align:left; padding:12px 0px 14px 0px;} .benefits ul { margin:0px; padding:0px; list-style-type:none;}
+.benefits ul li { width:92%; height:auto; float:left; text-align:left; display:block; background:url(../images/icon-advantage.gif) left 7px no-repeat; padding-left:8%; 
+font-size:12px; line-height:18px; padding-top:6px; padding-bottom:6px;}
+
+.bottom-right-box { width:69.00212%; height:auto; float:right; text-align:left;}
+.bottom-right-box img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+}
+.banner-box { width:100%; height:auto; float:left; text-align:center;} .banner-middle-box { width:100%; height:auto; float:left; text-align:center; padding-top:18px;
+ padding-bottom:8px;}
+ .banner-text-box { width:100%; height:auto; float:left; text-align:left;}
+ .inner-welcome-right
+{
+	width:39%;
+	height:auto;
+	float:right;
+	text-align:right;
+}
+.inner-welcome-right img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+
+}
+.content-box { width:100%; height:auto; float:left; text-align:left; padding:30px 0px 30px 0px;}
+.content-left{ width:34%; height:auto; float:left; text-align:left;}
+.content-left img
+{
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+	padding:4px;
+	border:1px solid #dddddd;
+	margin-top:5px;
+}
+
+.content-right{ width:62%; height:auto; float:right; text-align:left;}
+
+
+.clear
+{
+	clear:both;
+}
+/* ------------------Footer-------------------- */
+footer .wrap-footer{ }
+footer
+{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+}
+.footer-top
+{
+	width:96%; height:auto; text-align:center; float:left; padding-top:14px; padding-bottom:14px; padding-left:2%; padding-right:2%; 	font-size:11px;
+	line-height:22px;
+	color: #666666;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/footer-top-bg.jpg) left top repeat-x #dedfe3; -moz-border-radius: 4px; border-radius: 4px; -webkit-border-radius: 4px;
+}
+.footer-top a
+{
+	font-size:11px;
+	line-height:22px;
+	color: #666666;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+.footer-top a:hover
+{
+	font-size:11px;
+	line-height:22px;
+	color: #6b2694;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+.footer-top-left{ width:40%; height:auto; float:left; text-align:left;} .footer-top-right{ width:50%; height:auto; float:right; text-align:right;}
+.footer-bottom { width:96%; height:auto; float:left; text-align:left; padding-top:13px; padding-bottom:22px; padding-left:2%; padding-right:2%; font-size:11px; line-height:14px;
+color: #666666; font-weight:normal; font-family:Arial, Helvetica, sans-serif;}
+/*Heading styles*/
+h1, h2, h3, h4 {
+	margin: 0px;
+	padding:0px;
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	line-height:30px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #6b2992;
+	text-decoration: none;
+}
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	line-height:30px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #777777;
+	text-decoration: none;
+	text-transform: none;
+}
+h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height:24px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #6b2992;
+	text-decoration: none;
+}

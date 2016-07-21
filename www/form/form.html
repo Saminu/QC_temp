@@ -1,0 +1,54 @@
+<!-- form.html -->
+<div class="row">
+    <div class="col-md-3 ">
+        <div class="hidden" >Mortgage Counter <span class="badge">340</span></div>
+    </div>
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-3 text-center">
+        <i class="fa fa fa-2x fa-lock secure-logo"></i><span> Secure</span>
+    </div>
+    <div class="col-md-12">
+        <div class="form-container">
+            <form name="signupform" class="signup-form" novalidate>
+                <!-- our nested state views will be injected here -->
+                <div ui-view class="form-steps" autoscroll="true"></div>
+            </form>
+            <div class="page-header text-center hidden">
+                <div class="text-center status-buttons">
+                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+                    <a ui-sref-active="active" ui-sref=".middle"><span>2</span> Middle</a>
+                    <a ui-sref-active="active" ui-sref=".interests"><span>3</span> Interests</a>
+                    <a ui-sref-active="active" ui-sref=".payment"><span>4</span> Payment</a>
+                </div>
+            </div>
+        </div>
+        <!-- show our formData as it is being typed -->
+    <!--<pre class="">-->
+        <!--{{ formData }}-->
+    <!--</pre>-->
+    </div>
+    <div class="col-md-12">
+        <p class="small text-justify">*1.95% represents the rate from The Post Office for a 2 year fixed rate with a loan value of between 60-70%.
+         THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE
+            REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT
+            SECURED ON IT.
+        Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other services they
+            provide. MAKE SURE you check with the company before agreeing to any service if they charge you a fee and
+            what the terms are.<br>
+        <strong>Warning: Late repayment can cause you serious money problems. For help, go to
+            moneyadviceservice.org.uk</strong><br>
+        Quiddicompare does not charge a fee and does not provide any financial advice relating to mortgages. However
+            we may on occasion receive commissions from IFA’s and mortgage providers, brokers and intermediaries for
+            introducing you to them.<br>
+        The content of this site is meant to be informational, and it should not be considered financial advice.</p>
+    </div>
+    <div class="col-md-12">
+        <hr>
+        <h2>Compare quotes from the following lenders</h2>
+
+        <img class="img-responsive" src="/images/mortgage-providers.jpg">
+        <hr>
+
+    </div>
+</div>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>What will my monthly costs be? – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="Mortgage repayment calculator for buy to let, commercial, interest only, offset and shared ownership mortgages in the UK.">
+    <meta name="keywords" content="mortgage calculator">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script type="text/javascript" src="../js/mortgageCalculator.js"></script>
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body ng-app="formApp">
+
+<div class="container wrapper">
+    <div id="header"></div>
+    <div class="breadcrumb hidden-xs hidden-sm">
+        You are here » <a href="../index.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../mortgages/mortgage-calculators-and-tools.html">Mortgage calculators and tools</a> » <a href="../calculators/mortgage-payment.html">Mortgage Payment</a>
+
+    </div>
+    <section class="side-collapse-container">
+        <div class="row main-centre hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="jumbotron BG-purple">
+                    <div class="row">
+                        <div class="col-md-4 text">
+                            <h1><strong><span class='replace-seed-value'>Mortgage Payment Calculator</span></strong>
+                            </h1>
+
+                            <h3>Use our free calculator to assess your monthly mortgage repayments</h3>
+                            <img class="hidden" src="../images/5-star-large.png">
+                        </div>
+                        <div class="col-md-8 slider-image">
+                            <img class="img-responsive pull-right hidden-sm hidden-xs"
+                                 src="../images/new-banners/calculator-banner.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="BG-purple purple-Bar text-center mortgage-theme-primary">
+                    <h2 class="text-center"><strong><span>What will my monthly costs be?</span></strong></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-controller="mortgageController">
+            <div class="col-md-8 col-md-push-4 right-sidebar">
+                <div class="row center-table">
+                    <div class="col-md-12">
+                        <div class="row mortgage-calculator">
+                            <div class="col-md-12">
+                                <div class="form-container">
+                                    <form name="calcform" class="signup-form" novalidate>
+                                        <div>
+                                            <h1>What will my monthly costs be? </h1>
+
+                                            <div class="form-group">
+                                                <label for="loanTextInput">How much do you want to borrow?</label>
+                                                <input type="text" class="form-control input-lg" id="loanTextInput"
+                                                       name="loanTextInput" placeholder="£" onkeypress="return submitenter(this,event)">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="rateTextInput">Interest rate?</label>
+                                                <input type="text" class="form-control input-lg" id="rateTextInput"
+                                                       name="rateTextInput" placeholder="%" onkeypress="return submitenter(this,event)">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="termTextInput">How long do you want to borrow the money for (years)?</label>
+                                                <input type="text" class="form-control input-lg" id="termTextInput"
+                                                       name="termTextInput" placeholder="%" onkeypress="return submitenter(this,event)">
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div id="field-error" class="col-md-6 field-error"
+                                                     style="display: none;">
+                                                    <div class="alert alert-danger" role="alert"><strong>Oh snap! Please
+                                                        fill the required fields</strong></div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <a class="btn btn-block btn-lg btn-warning form-apply"
+                                                       id="calculate-button" onclick="ShowResult()">
+                                                        Calculate
+                                                        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="sidebar-form resultPane" id="resultPane" style="display: none;">
+                                    <h1>Based on the Information you have given us your monthly costs will be: </h1>
+
+                                    <h1>Repayment: <span class="amount">£<span id="RepaymentAmount">0</span></span> and Interest Only
+                                        <span class="amount">£<span id="InterestOnly">0</span></span></h1>
+
+                                    <h2> Give us a call on 0800 953 0304 or arrange a call back:</h2>
+                                    <hr>
+                                    <form name="mortgageForm" ng-submit="processForm(mortgageForm)" novalidate
+                                          autocomplete="off">
+                                        <!--<div class="form-group">-->
+                                        <!--<div class="secure-mortgage-header">-->
+                                        <!--<h2><span class="glyphicon glyphicon-lock"></span> Secure Mortgage Enquiry </h2>-->
+                                        <!--</div>-->
+
+                                        <!--<div ng-show="" class="progress">-->
+                                        <!--<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"-->
+                                        <!--aria-valuemin="0" aria-valuemax="100" style="width: 20%;">-->
+                                        <!--20% Complete-->
+                                        <!--</div>-->
+                                        <!--</div>-->
+                                        <!--</div>-->
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.mortgage_purpose.$valid}">
+                                            <label class="sr-only" for="mortgage_purpose"></label>
+                                            <input type="text" name="fake_postcode" style="display:none"
+                                                   aria-hidden="true">
+                                            <select ng-model="formData.mortgage_purpose"
+                                                    ng-options="mtype.option for mtype in mtypes"
+                                                    class="form-control input-lg" name="mortgage_purpose"
+                                                    id="mortgage_purpose"
+                                                    required>
+                                                <option value="">Mortgage Purpose</option>
+                                            </select>
+                            <span ng-show="mortgageForm.mortgage_purpose.$valid"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.mortgage_purpose.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please select
+                                                a valid Mortgage Purpose above</p>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.mortgage_amount.$valid}">
+                                            <label class="sr-only" for="mortgage_amount"></label>
+                                            <select ng-model="formData.mortgage_amount"
+                                                    ng-options="amount.str for amount in amounts"
+                                                    class="form-control input-lg" name="mortgage_amount"
+                                                    id="mortgage_amount" required>
+                                                <option value="">Mortgage Amount</option>
+                                            </select>
+                            <span ng-show="mortgageForm.mortgage_amount.$valid"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.mortgage_amount.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please select
+                                                a valid amount above</p>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.property_value.$valid}">
+                                            <label class="sr-only" for="property_value"></label>
+                                            <select ng-model="formData.property_value"
+                                                    ng-options="pvalue.str for pvalue in pvalues"
+                                                    class="form-control input-lg" name="property_value"
+                                                    id="property_value" required>
+                                                <option value="">Property Value</option>
+                                            </select>
+                            <span ng-show="mortgageForm.property_value.$valid"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.property_value.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please select
+                                                a valid amount above</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <hr>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.title.$valid}">
+                                            <label class="sr-only" for="title"></label>
+                                            <select ng-model="formData.title"
+                                                    ng-options="title.option for title in titles"
+                                                    class="form-control input-lg" name="title" id="title">
+                                                <option value="">Title</option>
+                                            </select>
+                            <span ng-show="mortgageForm.title.$dirty"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.title.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">
+                                                Please select
+                                                a valid Title above</p>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.first_name.$valid}">
+                                            <label class="sr-only" for="first_name"></label>
+                                            <input ng-model="formData.first_name" type="text"
+                                                   class="form-control input-lg"
+                                                   name="first_name" id="first_name"
+                                                   placeholder="Your First Name" autocomplete="off" required
+                                                   formnovalidate>
+                            <span ng-show="mortgageForm.first_name.$valid"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.first_name.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please input
+                                                a valid Name above</p>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.surname_name.$valid}">
+                                            <label class="sr-only" for="surname_name"></label>
+                                            <input ng-model="formData.surname_name" type="text"
+                                                   class="form-control input-lg"
+                                                   name="surname_name" id="surname_name"
+                                                   placeholder="Your Surname Name" autocomplete="off" required>
+                            <span ng-show="mortgageForm.surname_name.$valid"
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.surname_name.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please input
+                                                a valid Name above</p>
+                                        </div>
+                                        <div class="form-group row postcode-row"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.current_postcode.$valid}">
+                                            <div class="col-md-7 col-xs-7">
+                                                <label class="sr-only" for="current_postcode"></label>
+                                                <input ng-model="formData.postcode" type="text"
+                                                       class="form-control input-lg"
+                                                       name="current_postcode" id="current_postcode"
+                                                       placeholder="Current Postcode" required>
+                                                <!--placeholder="Current Postcode" ng-change="getPostcode()">-->
+                                            </div>
+                                            <div class="col-md-5 col-xs-5">
+                                                <a ng-click="getPostcode(); expandAddress()"
+                                                   class="btn btn-warning btn-lg form-apply btn-block">
+                                                    Search
+                                                </a>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                                <p ng-show="mortgageForm.current_postcode.$error.required && submitted && quoteSent"
+                                                   class="alert alert-danger">Please select
+                                                    a valid Post Code above</p>
+                                            </div>
+                                        </div>
+                                        <div ng-show="selectaddShow">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="property_value"></label>
+                                                <select style="background-color: #f0ad4e; border-color: #eea236;"
+                                                        ng-model="formData.residential_address"
+                                                        ng-options="p.address for p in Postcodes.address"
+                                                        class="form-control input-lg" name="selectadd" id="selectadd"
+                                                        ng-click="compressAddress(); $event.stopPropagation()"
+                                                        ng-focus="expandAddress()">
+                                                    <option value="">Select House Number</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div ng-show="houseShow">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="house_name"></label>
+                                                <input ng-model="formData.residential_address.house_number" type="text"
+                                                       class="form-control input-lg" name="house_name" id="house_name"
+                                                       placeholder="House Name" autocomplete="off">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.email_address.$valid}">
+                                            <label class="sr-only" for="email_address"></label>
+                                            <input ng-model="formData.email_address" type="email"
+                                                   class="form-control input-lg"
+                                                   name="email_address" id="email_address"
+                                                   placeholder="Email Address" autocomplete="off" required>
+                            <span ng-show="mortgageForm.email_address.$valid "
+                                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+                                            <p ng-show="mortgageForm.email_address.$error.required && submitted && quoteSent"
+                                               class="alert alert-danger">Please enter
+                                                a valid Email above</p>
+
+                                            <p ng-show="mortgageForm.email_address.$error.email && submitted && quoteSent"
+                                               class="alert alert-danger">Please Complete
+                                                the Email e.g Squiddi@Quiddihub.com</p>
+                                        </div>
+                                        <div class="form-group"
+                                             ng-class="{ 'has-success has-feedback': mortgageForm.telephone.$valid}">
+                                            <label class="sr-only" for="telephone"></label>
+                                            <input ng-model="formData.telephone"
+                                                   ng-blur="checkMobileno(); $event.stopPropagation()" type="text"
+                                                   class="form-control input-lg"
+                                                   name="telephone" id="telephone"
+                                                   placeholder="Telephone" autocomplete="off" required>
+                                                        <span ng-show="mobilenoCheck"
+                                                              class="glyphicon glyphicon-ok form-control-feedback"
+                                                              aria-hidden="true"></span>
+
+                                            <div ng-show="!mobilenumber && submitted && quoteSent"
+                                                 class="alert alert-danger">Please
+                                                enter a valid Telephone above
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="sr-only" for="alt_telephone"></label>
+                                            <input ng-model="formData.alt_telephone" type="text"
+                                                   class="form-control input-lg"
+                                                   name="alt_telephone" id="alt_telephone"
+                                                   placeholder="Alt Telephone">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" ng-disabled="isProcessing" ng-class="formstatus">
+                                                {{ appTxt }} <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </button>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <div>
+                                                <p class="small text-justify info-text">By clicking 'Request a Call
+                                                    Back', you are agreeing to be
+                                                    contacted by a third party to discuss your Mortgage requirements and
+                                                    that you agree
+                                                    to
+                                                    the terms of our <a target="_blank" href="/privacy.html">Privacy
+                                                        Statement</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <!-- Modal -->
+                                    <div modal-show modal-visible="showDialog" class="modal fade" id="myModal"
+                                         tabindex="-1" role="dialog"
+                                         aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content text-center">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                                    <h3 style="color: dimgray" class="modal-title text-center"
+                                                        id="myModalLabel">Thank You for
+                                                        Requesting a Quote </h3>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <img class="img-responsive"
+                                                         src="../mortgages/images/Squiddi-response.png">
+
+                                                    <p class="lead text-center">
+                                                        One of our team will call you using the number you have supplied
+                                                        to discuss your quote.
+                                                    </p>
+
+                                                    <p class="text-center">If we are unable to reach you, your dedicated
+                                                        adviser will email you to
+                                                        arrange a convenient time to speak and will provide their
+                                                        contact details for your records.
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" onclick="window.location.reload()"
+                                                            class="btn btn-default"
+                                                            data-dismiss="modal">Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>-->
+                                        <!--<script type="text/javascript">twttr.conversion.trackPid('l6m1d', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>-->
+                                        <noscript>
+                                            <img height="1" width="1" style="display:none;" alt=""
+                                                 src="https://analytics.twitter.com/i/adsct?txn_id=l6m1d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"/>
+                                            <img height="1" width="1" style="display:none;" alt=""
+                                                 src="//t.co/i/adsct?txn_id=l6m1d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"/>
+                                        </noscript>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 hidden">
+                        <h2>Compare fixed rate mortgages from Quiddi Compare</h2>
+
+                        <p>We offer the best fixed rate mortgage deals from some of the leading mortgage providers in
+                            the
+                            UK. By simply filling in your details above, one of advisors will call you to assist with
+                            your
+                            mortgage application. We are committed to helping you find the best offer which is why we
+                            will
+                            try to pair up your requirements with the best provider possible. We are always looking for
+                            new
+                            partners to work with so you can confident that you will be getting the best deals possible.
+                            Usually, to access the lowest fixed mortgage rates, it helps to have a good credit rating
+                            and a
+                            large deposit available. If you already have a property in mind, be sure to budget how much
+                            you
+                            think you can afford and what kind of loan-to-value (LTV) you require.</p>
+
+                        <h2>Fixed rate mortgage – how does it work?</h2>
+
+                        <p>A fixed rate mortgage is the interest rate you pay to the mortgage provider and remains the
+                            same
+                            throughout the mortgage term typically lasting 2,3,5 or 10 years. The interest rate you pay
+                            is
+                            not affected by the lender’s standard variable rate or the Bank of England’s base rate. At
+                            the
+                            end of the fixed term, your mortgage will usually be transferred to the lenders standard
+                            variable rate (SVC) but this is usually higher than average so at this point you would
+                            likely
+                            find a new mortgage deal.</p>
+
+                        <p>The key advantage of a fixed rate mortgage is that it you can be sure that there will be no
+                            changes in the interest rate you are paying. So for homeowners that are looking to budget,
+                            they
+                            will know exactly how much they will be paying month after month and year after year. If
+                            there
+                            are ever changed in the Bank of England’s base rate, you will not be affected because you
+                            will
+                            always be paying the same interest rate to your mortgage provider. There is also the
+                            opportunity
+                            to benefit from a lower interest rate in the first few years giving new buyers some
+                            disposable
+                            income to spend on furniture and home improvements.</p>
+
+                        <h2>Types of fixed rate mortgages</h2>
+
+                        <p>Fixed rate mortgage typically last for 2 to 3 years but lenders are most recently offering 5
+                            to
+                            10 year products. The longer the mortgage term, the higher the interest rate you usually
+                            pay.
+                            This is because there is a premium for the added security for paying a fixed rate over a
+                            long
+                            period of time, free of any market fluctuations to the variable rate or Bank of England base
+                            rate.</p>
+
+                        <h2>2 year fixed rate mortgage</h2>
+
+                        <p>A 2 year fix is a very low-risk option because you will benefit if the other variable or base
+                            rate increases but if it does not, you can always change your mortgage after the two-year
+                            spell.</p>
+
+                        <h2>3 year fixed rate mortgage</h2>
+
+                        <p>By taking a 3 year fixed rate mortgage, the typical interest rate is likely to be slightly
+                            higher
+                            than a 2 year fix because you are paying for the extra security. However, this product might
+                            suit various homeowners who plan to move house again in the next years. This way, they can
+                            budget exactly what they are going to spend and can plan ahead.</p>
+
+                        <h2>5 year fixed rate mortgage</h2>
+
+                        <p>Since a 5 year fixed rate mortgage is a long period, the homeowner may in fact lose out on
+                            better
+                            rates in the market. If their mortgage company’s variable rate is lower, the homeowner will
+                            not
+                            be able to change mortgages very easily. The fixed rate mortgages have an early repayment
+                            penalty in order to tie you in for longer and this can cost up to 6 months of mortgage
+                            payments.</p>
+
+                        <h2>10 year fixed rate mortgage</h2>
+
+                        <p>The 10-year fix is usually the most expensive because again, you are paying to avoid the
+                            chance
+                            of any rate fluctuations. Similar to the 5-year product, there are early payment penalties
+                            that
+                            apply should you wish to change the type of mortgage product. As a result, homeowners on a
+                            10
+                            year fixed mortgage rate may miss out on better rates available. Mortgage applicants are
+                            advised
+                            to consider the possibility of better rates being available before proceeding.</p>
+
+                        <h3>Useful advice</h3>
+
+                        <p>For anyone applying for a fixed rate mortgage, it is important to think about how long you
+                            want
+                            the loan for. If you think that you are in a financial position where you will be able to
+                            overpay on your mortgage, you can do so for up to 10% per year. However, there will be an
+                            early
+                            payment penalty should you wish to clear your debt early, up to 6 months worth of payments
+                            and
+                            this is not ideal. So it is essential to weigh up just how long you want the fixed mortgage
+                            for
+                            or whether you think that you would be better off with a tracker mortgage or variable
+                            mortgage.</p>
+
+                        <p>If you are still undecided, one of the most common things to do with a fixed rate mortgage is
+                            to
+                            use the fixed rate for 2 years and then to assess the variable rates and Bank of England
+                            base
+                            rate. Here, you can decide whether you should switch to a different mortgage product or
+                            indeed
+                            take out a new 2 year mortgage.</p>
+
+                        <p>When comparing the cost of mortgage products, it is important to remember that additional
+                            fees
+                            apply. Mortgage providers will always charge an arrangement fee for organizing the loan and
+                            this
+                            can cost a few hundred or thousand pounds. However, depending on the mortgage company, there
+                            may
+                            be deals available that reduce the arrangement fee e.g discounts for first time buyers.
+                            Also, be
+                            sure to see if the mortgage company offers rewards such as a cashback.</p>
+
+                        <p>Finally, it is recommended to carefully budget how much you can afford to repay on your
+                            mortgage
+                            each month. Failing to repay your monthly repayment on time may incur further charges and
+                            long-term arrears may lead to the repossession of your property. There is also the negative
+                            impact on your credit rating because your credit file is shared between the mortgage lender
+                            and
+                            other credit reference agencies. Failing to repay your mortgage payments on time may cause
+                            your
+                            credit score to fall and make it harder to access credit in the future.</p>
+
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class='st_facebook_hcount' displayText='Facebook'></span>
+                                <span class='st_twitter_hcount' displayText='Tweet'></span>
+                                <span class='st_googleplus_hcount' displayText='Google +'></span>
+                                <span class='st_email_hcount' displayText='Email'></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8 left-sidebar">
+                <div class="BG-purple purple-Bar text-center mortgage-theme-primary">
+                    <h2 class="text-center"><strong><span>Try our other Calculators</span></strong></h2>
+                </div>
+
+                <div class="panel">
+
+                    <h2>Buy to let Mortgage<br> Calculator</h2>
+
+
+                    <p><a href="../calculators/buy-to-let-mortgage.html">See how much you could borrow with this calculator</a></p>
+
+
+                    <a href="../calculators/buy-to-let-mortgage.html" class="btn btn-warning form-apply">Calculate</a>
+
+                </div>
+                <div class="panel">
+
+                    <h2>Mortgage Payment<br> Calculator</h2>
+
+
+                    <p><a href="../calculators/mortgage-payment.html">See how much you could borrow with this calculator</a></p>
+
+
+                    <a href="../calculators/mortgage-payment.html" class="btn btn-warning form-apply">Calculate</a>
+
+                </div>
+                <div class="panel">
+
+                    <h2>Mortgage Affordability<br> Calculator</h2>
+
+
+                    <p><a href="../calculators/mortgage-affordability.html">See how much you could borrow with this calculator</a></p>
+
+
+                    <a href="../calculators/mortgage-affordability.html" class="btn btn-warning form-apply">Calculate</a>
+
+                </div>
+                <div class="panel">
+
+                    <h2>Stamp Duty<br> Calculator</h2><br>
+
+                    <p><a href="../calculators/stamp-duty.html">See how much you could borrow with this calculator</a></p>
+
+
+                    <a href="../calculators/stamp-duty.html" class="btn btn-warning form-apply">Calculate</a>
+
+                </div>
+                <div class="panel">
+                    <h2>Mortgage Overpayment<br> Calculator</h2>
+
+
+                    <p><a href="../calculators/mortgage-overpayment.html">See how much you could borrow with this calculator</a></p>
+
+
+                    <a href="../calculators/mortgage-overpayment.html" class="btn btn-warning form-apply">Calculate</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</div>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

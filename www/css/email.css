@@ -1,0 +1,89 @@
+h3 {
+  color: #6b2992;
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  .side-collapse-container {
+    margin-top: 20px;
+  }
+  .side-collapse-container p,
+  .side-collapse-container h1,
+  .side-collapse-container h2,
+  .side-collapse-container h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .image-icons {
+    margin: 0px auto 0px auto;
+  }
+  .reason {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 768px) {
+  .side-collapse-container p,
+  .side-collapse-container h1,
+  .side-collapse-container h2,
+  .side-collapse-container h3 {
+    margin-left: 15px;
+  }
+}
+.header-divider {
+  background-color: #6b2992;
+  color: white;
+  margin-top: 10px;
+}
+.header-divider h1,
+.header-divider h2 {
+  margin-bottom: 0px;
+  padding: 10px 15px;
+  color: white;
+}
+.divider {
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+@media (max-width: 768px) {
+  .divider h3 {
+    margin-left: 15px;
+  }
+}
+.divider .provider-header {
+  color: #666;
+}
+.divider ul {
+  margin-top: 25px;
+  list-style: square inside url(/images/icon-advantage.gif);
+  padding-left: inherit;
+}
+.divider .apply {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.bg-grey {
+  background-color: grey;
+}
+.bg-white {
+  padding: 5px;
+  background-color: white;
+  margin-top: 10px;
+}
+.bg-white .small {
+  line-height: 15px;
+}
+.bg-white .apr-heading {
+  margin-bottom: 3px;
+}
+.footer {
+  margin-top: 10px;
+}

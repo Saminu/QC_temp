@@ -1,0 +1,131 @@
+.center-table table.listing {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.center-table table.listing button {
+  background: url(../images/apply-now-btn.png) no-repeat;
+  width: 90px;
+  height: 36px;
+  padding: 0 1px 2px 1px;
+  border: none;
+  color: #fff;
+}
+.center-table table.listing button:hover {
+  color: #ccc;
+}
+.center-table table.listing thead {
+  vertical-align: middle;
+}
+.center-table table.listing th {
+  background: url(../images/table-head-bg.jpg) #f7f7f7 repeat-x bottom;
+  padding: 5px 3px;
+  color: #6b2992;
+  height: 20px;
+  border: 1px solid #CCC;
+  text-align: inherit;
+}
+.center-table table.listing td {
+  vertical-align: middle;
+  padding: 5px;
+}
+.center-table table.listing td p {
+  line-height: normal;
+}
+.center-table table.listing td img {
+  width: 100px;
+}
+.center-table table.listing td .apply {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  line-height: 32px;
+  height: 40px;
+  width: 90px;
+  text-align: center;
+  background: url(/images/apply-now-btn.png) no-repeat 0 0;
+  -moz-border-radius: 4px;
+  /* Firefox */
+  -webkit-border-radius: 4px;
+  /* Safari, Chrome */
+  border-radius: 4px;
+  /* CSS3 */
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-table table.listing td .apply:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+.center-table table.listing td.apr-message {
+  background-color: #eef8fe;
+  font: normal 11px/11px Arial, Helvetica, sans-serif;
+}
+.center-table table.listing td.align-right {
+  text-align: right;
+}
+.listing a {
+  -webkit-font-smoothing: antialiased;
+  font: 14px Arial;
+}
+.listing a:link {
+  text-decoration: none;
+}
+.listing a:visited {
+  text-decoration: none;
+}
+.listing a:hover {
+  text-decoration: none;
+}
+.listing a:active {
+  text-decoration: none;
+}
+.well {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-bottom: 20px;
+  color: #65615e;
+  min-height: 130px;
+  background-color: white;
+  border: 1px solid #242E35;
+}
+@media (min-width: 768px) {
+  .well {
+    min-height: 130px;
+  }
+}
+.well:hover {
+  padding: 19px;
+  background-color: #000000;
+  border: 1px solid #562A53;
+  color: #65615e;
+}
+.channel-logo {
+  margin-bottom: 10px;
+}
+.channel-logo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+  max-width: 116px;
+  max-height: 65px;
+}
+.right-sidebar .well {
+  padding: 10px 15px;
+  border: 1px solid #F1F1F1;
+  background-color: #ffffff;
+  text-decoration: no-underline;
+  cursor: hand;
+}
+.popover .arrow {
+  display: none;
+}
+.popover .arrow .arrow:after {
+  display: none;
+  content: "";
+}

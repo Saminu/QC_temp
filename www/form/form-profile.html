@@ -1,0 +1,70 @@
+<!-- form-interests.html -->
+<div ng-form="profileForm">
+<h2>Tell us a bit about yourself so we can get the best <strong>deal….</strong></h2>
+
+
+<div class="form-group" ng-class="{ 'has-success has-feedback': profileForm.status.$valid }">
+    <div class="input-group">
+        <label class="sr-only" for="status"></label>
+        <div class="input-group-addon">Employment Status</div>
+
+        <select ng-model="formData.employment_status" ng-options="status.option for status in estatuses" class="form-control input-lg" name="status" id="status" required>
+            <option value="">-- Select --</option>
+        </select>
+    </div>
+    <div ng-show="profileForm.status.$dirty">
+        <p ng-show="profileForm.status.$error.required" class="alert alert-danger">Please tell us your employment status</p>
+    </div>
+</div>
+
+<label class="label-form">Any CCJ’s or IVA’s ?</label>
+<div class="form-group">
+<div class=" radio-inline">
+        <label>
+            <input type="radio" ng-model="formData.ccj" ng-value="false" ng-checked="true"> No
+        </label>
+    </div>
+<div class=" radio-inline">
+    <label>
+        <input type="radio" ng-model="formData.ccj" ng-value="true"> Yes
+    </label>
+</div>
+    <p><span>Tip:</span> CCJ = county court judgement, IVA = bankruptcy</p>
+</div>
+
+<label class="label-form">Missed any Credit Payments?</label>
+<div class="form-group">
+    <div class="radio-inline">
+        <label>
+            <input type="radio" ng-model="formData.missed_credit" ng-value="false" ng-checked="true">
+            No
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" ng-model="formData.missed_credit" ng-value="true">
+            Yes
+        </label>
+        </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-1  col-xs-2 ">
+        <a ui-sref="form.amount" class="btn btn-block form-back">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        </a>
+    </div>
+    <div class="col-md-6 col-md-offset-5 col-xs-10">
+        <a ui-sref="form.status" class="btn btn-block btn-lg btn-warning form-apply" ng-disabled="!profileForm.$valid" analytics-on analytics-event="Mortgage" analytics-category="Mortgage" analytics-label="3Profile">
+            Continue <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85" style="width: 85%;">
+        85% Complete
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>Remortgage Deals | Remortgage Calculator| Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Use our Remortgage Calculator and find the best remortgage rates and deals for your property..">
+    <meta name="keywords" content="Remortgage, Remortgage calculator, Remortgage deals, Best remortgage deals, Remortgaging, Remortgage rates, How to remortgage, Best remortgage rates, Remortgage comparison, What does remortgage mean">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="../libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="../libs/xdomain/dist/0.6/xdomain.min.js"
+            slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <![endif]-->
+    
+</head>
+
+<body ng-app="formApp">
+
+<div class="container wrapper">
+
+<div id="header"></div>
+
+<div class="breadcrumb hidden-xs hidden-sm">
+    You are here » <a href="remortgage-deals.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../mortgages/remortgage-deals.html">Remortgage</a>
+</div>
+<section class="side-collapse-container">
+    <div class="row main-centre hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="jumbotron BG-purple">
+                <div class="row">
+                    <div class="col-md-4 text">
+                        <h1>Compare</h1>
+
+                        <h2><strong><span class='replace-seed-value'>Remortgages</span></strong></h2>
+
+                        <h3>Remortgage Deals and Rates for your property</h3>
+                        <img class="hidden" src="images/5-star-large.png">
+                    </div>
+                    <div class="col-md-8 slider-image">
+                        <img class="img-responsive pull-right hidden-sm hidden-xs"
+                             src="../images/new-banners/ReMortgage-Website-Banner.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+            <div class="BG-purple purple-Bar text-center mortgage-theme-primary" align="center">
+                <h2 class="text-center"> <strong><span class='replace-seed-value'>Remortgage Rates</span></strong></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-controller="mortgageController">
+        <div class="col-md-4 left-sidebar">
+            <img class="img-responsive hidden-md hidden-lg" src="../mortgages/images/remortgage-mobile.png">
+            <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+            <div id="mortgage-calculator"></div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-mortgage.html">Buy to Let
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/remortgage-deals.html">Remortgage Deals</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/second-charge-mortgage.html">Second
+                                Charge Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                Ownership Mortgages</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                Mortgages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading bar-pupple">Useful Information</div>
+                <div class="panel-body">
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                to save money on your mortgage</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                arrears help</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                Glossary</a>
+                        </div>
+                    </div>
+                    <div class="media row">
+                        <div class="col-md-2">
+                            <i class="fa fa-info-circle"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                happens if you cannot repay your mortgage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 right-sidebar">
+            <div class="row center-table">
+                <div class="col-md-12">
+                    <img class="img-responsive hidden-xs hidden-sm" src="../mortgages/images/remortgage-desktop.png">
+                </div>
+                <div ng-include src="'/templates/mortgage-providers.html'"></div>
+                <div class="col-md-12 ">
+
+                    <h2>Remortgage – what does it mean?</h2>
+
+                    <p>To remortgage means to switch your current mortgage deal to a new one either with the same or different provider. With the average mortgage term for around 25 years, there are always going to be better rates and options available to homeowners in the UK. <a href="http://en.wikipedia.org/wiki/Remortgage">To remortgage your property</a> allows you to take advantage of new deals, offers and introductory periods that will allow you to save money over time without having to leave your home.</p>
+                    <p>A common reason for remortgaging is because the introductory period on your existing property is no longer applicable. The introductory period usually lasts for two to five years and offers a lower interest rate as an incentive for new customers. Once this initial period is over, homeowners are put on the mortgage providers’ standard variable rate (SVR), which could be around 5% but this much higher than the average interest rate. To avoid paying a higher rate, property owners try to switch to better deals and this is commonly known as ‘remortgaging.’</p>
+
+                    <h2>Remortgaging – what are the advantages?</h2>
+
+                    <p>The main advantage of remortgaging is that  you can reduce your monthly repayments by <strong>switching  to a better deal</strong>. The idea is to find a mortgage from your existing or new  provider that has a better rate and introductory period. If you can switch from  paying 5% per month to 3%, you could save hundreds or thousands of pounds a  year. </p>
+                    <p>Since the Bank of England base rate has  been 0.5% since 2009, you could realistically move your mortgage deal from a  higher rate to a lower one. With such stability, homeowners can take advantage  of <a href="https://quiddicompare.co.uk/mortgages/tracker-mortgage-rates.html">tracker  mortgages with low rates</a>.  Also,  property owners may find that they have been able to save money over the last few  years and would now like to try use that saved money to lower their monthly  interest repayments through an <a href="https://quiddicompare.co.uk/mortgages/offset-mortgage-rates.html">offset  mortgage</a>. </p>
+                    <p>If you wish to <strong>repay your mortgage early</strong>, there are always early repayment fees  that apply. However, a new remortgage deal may allow you to overpay earlier  than your existing deal and for less. </p>
+                    <p>Remortgaging is common to <strong>consolidate your debts</strong>. Getting a  mortgage is like getting a big loan secured on your home. So if you have a lot  of outstanding loans and credit card bills, you can remortgage to borrow more  money to pay off your debts. The rate you pay on a mortgage is much cheaper  than what is charged for personal loans and credit cards, which is why many see  remortgaging as a viable option for raising capital. If you plan to remortgage  for debt consolidation, it is important to follow a strict plan to clear your  bills and not be tempted to run up more debt.</p>
+                    <p>But the simplest thing about remortgaging  is that you <strong>don&rsquo;t have to move home</strong>.  You can continue to own or live in your premises and there is no need to move  out or change address.</p>
+                    <h2>Use our Remortgage  Calculator to see how much you could save</h2>
+
+                    <p>A remortgage calculator is essential when  deciding whether or not to remortgage. The sums are very important when its  come down to it because you need to know if switching mortgages is more  cost-effective. There are always costs for getting a new mortgage deal such as  arrangement fees, legal fees, valuation costs and set up costs amongst others.  Therefore it is a matter of doing the maths to see if you would be better off  switching and this is why using a remortgage calculator is vital.</p>
+                    <p>Quiddi to the rescue! You can find our  remortgage calculator on the left hand side of the page. Directly from <a href="https://www.moneyadviceservice.org.uk/en/articles/remortgaging-to-cut-costs">The  Money Advice Service</a>, the calculator asks you to enter a few details about  your income, monthly take home and property value and we will be able to be  able to tell you the different rates and fees available to you. </p>
+                    <h3>How to remortgage</h3>
+
+                    <p>How to remortgage is simple. Once you have used our remortgage calculator to see if it is better value to switch mortgages, click on the button that says ‘compare quotes now.’ You will be asked a few simple questions about your finances and property and will be recommended to the mortgage provider best suited to you. </p>
+                    <p>Switching mortgages if it is done by post or online is known as ‘execution only.’ <br>
+                        The Quiddi Compare website offers a full remortgage comparison service. We work with the leading mortgage providers in the UK to offer the best remortgage rates to our customers.  It is completely free to use our remortgage calculator and comparison service and we will never pass on your details to unnecessary third party companies.<br>
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-12">
+                    <hr>
+                    <p class="small text-center">
+                        THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT.<br>
+                        Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other services they provide. MAKE SURE you check with the company before agreeing to any service if they charge you a fee and what the terms are.<br>
+                        Warning: Late repayment can cause you serious money problems. For help, go to moneyadviceservice.org.uk
+                        QuiddiCompare does not charge a fee and does not provide any financial advice relating to mortgages. However we may on occasion receive commissions from IFA’s and mortgage providers, brokers and intermediaries for introducing you to them.<br>
+                        The content of this site is meant to be informational, and it should not be considered financial advice. - See more at: <a target="_blank" href="https://quiddicompare.co.uk/mortgages">quiddicompare.co.uk/mortgages</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+</div>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/raven-js/dist/raven.js"></script>
+<script>
+    Raven.config('https://1afb1d3a2d7141519c638708c53ed4e2@monitor.quiddiportal.com/13', {
+        // pass along the version of your application
+        // release: '1.0.0',
+
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+//        whitelistUrls: ['example.com/scripts/']
+
+    }).install();
+    Raven.isSetup();
+
+    //    Raven.wrap({logger: "formApp"}, function(){ });
+    //    Raven.captureMessage('Broken!', {tags: { key: "value" }});
+    //    Raven.captureException(e, {extra: { foo: "bar" }})
+</script>
+
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../js/main.js"></script>
+
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

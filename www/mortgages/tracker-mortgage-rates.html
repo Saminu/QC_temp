@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title class='replace-seed-value'>Tracker Mortgage Rates – Quiddi Compare</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="Pay lower rates by getting a tracker mortgage. Use our table to compare the best tracker mortgage rates in the UK">
+    <meta name="keywords" content="Tracker mortgage rate">
+    <meta name="robots" content="noindex">
+    <!-- Styles -->
+    <!--<link rel="stylesheet" href="css/baseline.compress.css">-->
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baseline.reset.css">
+    <link rel="stylesheet" href="../css/baseline.form.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="../libs/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../libs/respond/dest/respond.min.js"></script>
+    <script type="text/javascript" src="../libs/xdomain/dist/0.6/xdomain.min.js"
+            slave="https://omgapi.quiddiportal.com/api/proxy"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="formApp">
+
+<!--<div class="scroll-top page-scroll affix-top">-->
+    <!--<a class="btn btn-warning btn-lg form-apply" href="/mortgage.html#mortgageform">-->
+        <!--Compare Quotes Now <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right "></i>-->
+    <!--</a>-->
+<!--</div>-->
+
+<div class="container wrapper">
+    <div id="header"></div>
+    <div class="breadcrumb hidden-xs hidden-sm">
+        You are here » <a href="../index.html" class="bc-active">Home</a> » <a href="../mortgage.html">Mortgages</a> » <a href="../mortgages/tracker-mortgage-rates.html">Tracker Mortgage Rates</a>
+    </div>
+    <section class="side-collapse-container">
+        <div class="row main-centre hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="jumbotron BG-purple">
+                    <div class="row">
+                        <div class="col-md-4 text">
+                            <h1><strong><span class='replace-seed-value'>Tracker Mortgage</span></strong></h1>
+                            <h2>Compare the Best Tracker Mortgages in the UK</h2>
+                            <img class="hidden" src="../images/5-star-large.png">
+                        </div>
+                        <div class="col-md-8 slider-image">
+                            <img class="img-responsive pull-right hidden-sm hidden-xs"
+                                 src="../images/new-banners/TrackerMortgage-Website-Banner.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="BG-purple purple-Bar text-center mortgage-theme-primary" align="center">
+                    <h2 class="text-center"><strong><span>Tracker Mortgage Rates</span></strong></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" ng-controller="mortgageController">
+            <div class="col-md-4 left-sidebar">
+                <img class="img-responsive hidden-md hidden-lg" src="/mortgages/images/mortgage-mobile.png">
+                <div ng-include src="'/templates/mortgage-sideform.html'"></div>
+                <div id="mortgage-calculator"></div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading bar-pupple">Types of Mortgages</div>
+                    <div class="panel-body">
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/buy-to-let-mortgage.html">Buy to Let
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/buy-to-let-remortgage.html">Buy to Let Remortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/first-time-buyer-mortgage.html">First Time Buyer Mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/fixed-rate-mortgages.html">Fixed Rate
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/interest-only-mortgages.html">Interest Only Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/offset-mortgage-rates.html">Offset
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/remortgage-deals.html">Remortgage Deals</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/right-to-buy-mortgage.html">Right to Buy Mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/second-charge-mortgage.html">Second
+                                    Charge Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/shared-ownership-mortgages.html">Shared
+                                    Ownership Mortgages</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/tracker-mortgage-rates.html">Tracker
+                                    Mortgages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading bar-pupple">Useful Information</div>
+                    <div class="panel-body">
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/save-money-on-mortgage-repayments.html">How
+                                    to save money on your mortgage</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/mortgage-arrears-help-if-you-have-trouble-paying-your-mortgage.html">Mortgage
+                                    arrears help</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/glossary-terminology-jargon-buster.html">Mortgage
+                                    Glossary</a>
+                            </div>
+                        </div>
+                        <div class="media row">
+                            <div class="col-md-2">
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <a href="/mortgages/what-happens-if-you-cannot-repay-your-mortgage.html">What
+                                    happens if you cannot repay your mortgage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-sidebar">
+                <div class="row center-table">
+                    <div class="col-md-12">
+                        <img class="img-responsive hidden-xs hidden-sm" src="/mortgages/images/mortgage-desktop.png">
+                    </div>
+                    <div ng-include src="'/templates/mortgage-providers.html'"></div>
+                    <div class="col-md-12 ">
+                        <h2>What is a tracker mortgage?</h2>
+
+                        <p>A tracker mortgage is a mortgage where the interest rate is variable and changes constantly
+                            as it tracks another interest rate, usually the <a
+                                    href="http://www.bankofengland.co.uk/statistics/Documents/rates/baserate.pdf"
+                                    target="_new">Bank of England Base Rate</a>. The interest rate you pay is a
+                            combination of the tracker deal rate advertised by the lender plus the base rate. So if the
+                            tracker deal offers 0.5% interest and the base rate is 2.5%, you will pay 3% interest in
+                            total on your mortgage. Tracker mortgages can last for as little as one year or you can have
+                            a lifetime tracker mortgage to last the entire length of the mortgage period.</p>
+
+                        <p>The idea of the tracker mortgage is that if Bank of England’s rate goes down, you will
+                            benefit and pay less interest on your mortgage. However, if the Bank of England’s rate goes
+                            up, then you will have to pay more interest. The graph below shows how the tracker rate
+                            follows the base rate.</p>
+                        <img src="images/graph.png" width="578" height="385" alt="tracker-mortgage-rates">
+
+                        <p>Source: <a href="http://moneyfacts.co.uk/guides/mortgages/what-is-a-tracker-mortgage/"
+                                      target="_new">Moneyfacts</a></p>
+
+                        <p>When you sign up for a tracker mortgage, you are given a very low ‘introductory rate’ and
+                            when this period ends, you are allocated the standard variable rate (SVR) which his the
+                            default rate the lender charges for all variable rate mortgages.</p>
+
+                        <h2>Tracker mortgage advantages</h2>
+
+                        <p>Tracker mortgages are extremely popular and there are several advantages for selecting this
+                            type of mortgage. Borrowers will be able to make the most of lower interest rates that
+                            become available by tracking the Bank of England rate. This will lead to a saving on the
+                            monthly interest they pay for their mortgage until the interest rate goes back up.
+                            Homeowners with a fixed mortgage rate are unable to enjoy the same rates.</p>
+
+                        <p>A further advantage is when setting up your tracker mortgage, the arrangement fee you are
+                            forced to pay will be typically be lower than what customers pay for a fixed mortgage. In
+                            addition, when you sign up, the introductory rate you are given is usually the lowest
+                            interest rate you can get for any type of mortgage.</p>
+
+                        <p>Most tracker mortgages allow you to overpay up to 10% of your mortgage balance per year
+                            without an early repayment charge (EPC). Mortgage lenders will charge around 2% for early
+                            repayments so by avoiding this you can save a few hundred or thousand pounds. This aspect of
+                            the tracker mortgage is very helpful to individuals who feel comfortable with their finances
+                            or are expecting an injection of cash and can therefore afford to overpay on their mortgage
+                            repayments.</p>
+
+                        <p>An additional benefit is that some mortgage lenders offer a ‘Droplock feature.’ This means
+                            that if the tracker rate is causing your interest rate to go much higher than expected, the
+                            lender will allow you to switch to one of their fixed rate models. It is worth finding out
+                            if your mortgage lender offers this because it will allow you to minimize your interest
+                            repayments.</p>
+
+                        <h2>Tracker mortgage disadvantages</h2>
+
+                        <p>The main downside of a tracker mortgage is that the base rate can go up and therefore you
+                            will be forced to pay a higher monthly mortgage repayment than expected. For this reason, a
+                            tracker mortgage is not suitable for an individual who cannot handle an increase in their
+                            budget. For those looking for more stability in how much they pay each month, they may be
+                            better suited for a fixed rate product which is not subject to fluctuations. Also, once your
+                            introductory period ends, you will be placed on the standard variable rate, which can
+                            sometimes be much higher and lead to a huge increase in you repayments. A way to avoid this
+                            higher rate is to remortgage or arrange a new deal with your lender.</p>
+
+                        <p>A further disadvantage is that sometimes you cannot take advantage of the lowest rates
+                            because the lender puts a ‘collar rate’ on it which caps the interest you are charged to a
+                            certain level. If you are looking to apply for a tracker mortgage, it is important to see if
+                            the provider has a collar rate or not.</p>
+
+                        <h3>Best tracker mortgages rates at Quiddi Compare</h3>
+
+                        <p>To receive a mortgage quote, simply fill in our form above and someone from the Quiddi team
+                            will get in touch with a personal offer based on your criteria. If it is specifically a
+                            tracker mortgage that you are interested in, we compare some of the top tracker mortgages in
+                            the UK and will be able to find you the best tracker mortgage deal based on your
+                            circumstances. Our service is completely free of charge and we will always help our
+                            customers find the lowest interest rate and best loan to value possible.</p>
+
+
+                    </div>
+                    <div class="col-md-12">
+<<<<<<< HEAD
+                        <hr>
+                        <p class="small text-center">
+                            THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME. YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT.<br>
+                            Some partners may charge you a fee for helping you find a Mortgage or Secured Loan or other services they provide. MAKE SURE you check with the company before agreeing to any service if they charge you a fee and what the terms are.<br>
+                            Warning: Late repayment can cause you serious money problems. For help, go to moneyadviceservice.org.uk
+                            QuiddiCompare does not charge a fee and does not provide any financial advice relating to mortgages. However we may on occasion receive commissions from IFA’s and mortgage providers, brokers and intermediaries for introducing you to them.<br>
+                            The content of this site is meant to be informational, and it should not be considered financial advice. - See more at: <a target="_blank" href="https://quiddicompare.co.uk/mortgages">quiddicompare.co.uk/mortgages</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</div>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="//lookup.identi-k.it/DynamicContentLookupAPI/dynamicContentLookup.js"></script>
+
+
+<!--angular tags-->
+<script src="../libs/angular/angular.min.js"></script>
+<script src="../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../libs/angulartics/src/angulartics.js"></script>
+<script src="../libs/angulartics/src/angulartics-ga.js"></script>
+<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../libs/angular-animate.min/index.js"></script>
+<script src="../libs/angular-shims-placeholder/dist/angular-shims-placeholder.min.js"></script>
+
+<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/raven-js/dist/raven.js"></script>
+<script>
+    Raven.config('https://1afb1d3a2d7141519c638708c53ed4e2@monitor.quiddiportal.com/13', {
+        // pass along the version of your application
+        // release: '1.0.0',
+
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+//        whitelistUrls: ['example.com/scripts/']
+
+    }).install();
+    Raven.isSetup();
+
+    //    Raven.wrap({logger: "formApp"}, function(){ });
+    //    Raven.captureMessage('Broken!', {tags: { key: "value" }});
+    //    Raven.captureException(e, {extra: { foo: "bar" }})
+</script>
+
+<script src="../app/form.js"></script>
+<script src="../app/controllers/formController.js"></script>
+
+<script src="../js/main.js"></script>
+
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 970546039;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/970546039/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- SessionCam Client Integration v6.0 -->
+<script type="text/javascript">
+    //<![CDATA[
+    var scRec = document.createElement('SCRIPT');
+    scRec.type = 'text/javascript';
+    scRec.src = "//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";
+    document.getElementsByTagName('head')[0].appendChild(scRec);
+    //]]>
+</script>
+<!-- End SessionCam -->
+
+</body>
+</html>

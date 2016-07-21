@@ -1,0 +1,154 @@
+<!-- form-profile.html -->
+<div ng-form="personalForm">
+    <h2><strong>Almost done.</strong> We have some suitable lenders. One final step so they can reach you!</h2>
+
+    <div ng-show="remortgageSelected">
+    <div class="form-group row postcode-row">
+        <div class="col-md-8 col-xs-7">
+            <div class="input-group">
+                <label class="sr-only" for="postcode"></label>
+
+                <div class="input-group-addon">Post Code</div>
+                <input ng-model="formData.postcode" ng-minlength="4" ng-maxlength="8" type="text"
+                       class="form-control input-lg" name="postcode" id="postcode">
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-5">
+            <a ng-click="getPostcode(); expandAddress()" class="btn btn-block btn-warning btn-lg form-apply">
+                Search
+            </a>
+        </div>
+        <div class="col-md-12 col-xs-12">
+            <p><i class="fa fa-info-circle"></i> Please enter post code and press ‘search’ if known</p>
+        </div>
+    </div>
+
+    <!--{{Postcodes}}-->
+    <div class="form-group">
+        <div class="input-group">
+            <label class="sr-only" for="selectadd"></label>
+
+            <div class="input-group-addon">Select Address</div>
+            <select ng-model="formData.residential_address" ng-model="Selection"
+                    ng-options="p.address for p in Postcodes.address" class="form-control input-lg" name="selectadd"
+                    id="selectadd" ng-blur="compressAddress()" ng-focus="expandAddress()">
+                <option value="">-- Select --</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <!--{{Selection}}-->
+    <div class="form-group hidden">
+        <div class="input-group">
+            <label class="sr-only" for="mobileno"></label>
+
+            <div class="input-group-addon">House Name/Number</div>
+            <input ng-model="formData.residential_address.house_number" type="text" class="form-control input-lg"
+                   name="postcode" id="mobileno" readonly>
+        </div>
+    </div>
+
+    <div class="form-group hidden">
+        <div class="input-group">
+            <label class="sr-only" for="city"></label>
+
+            <div class="input-group-addon">City</div>
+            <input ng-model="formData.residential_address.town" type="text" class="form-control input-lg"
+                   name="postcode" id="city" readonly>
+        </div>
+    </div>
+
+    <div class="form-group hidden">
+        <div class="input-group">
+            <label class="sr-only" for="street"></label>
+
+            <div class="input-group-addon">Street</div>
+            <input ng-model="formData.residential_address.street" type="text" class="form-control input-lg"
+                   name="postcode" id="street" readonly>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="form-group"
+         ng-class="{ 'has-success has-feedback': personalForm.mobile_number.$valid && mobilenoCheck}">
+        <div class="input-group">
+            <label class="sr-only" for="mobileno"></label>
+
+            <div class="input-group-addon">Mobile Number</div>
+            <input ng-model="formData.mobile_number" ng-blur="validate=true && checkMobileno()" type="text"
+                   class="form-control input-lg" name="mobile_number" id="mobile_number"
+                   placeholder="07_________" required>
+            <!--<span ng-show="personalForm.mobile_number.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>-->
+            <span ng-show="mobilenoCheck" class="glyphicon glyphicon-ok form-control-feedback"
+                  aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <p ng-show="!mobilenoCheck && personalForm.mobile_number.$dirty" class="alert alert-warning">Please, enter a correct
+        mobile number so we can contact you.</p>
+
+    <div class="form-group">
+        <div class="input-group">
+            <label class="sr-only" for="homeno"></label>
+
+            <div class="input-group-addon">Home Number</div>
+            <input ng-model="formData.home_number" ng-minlength="11" type="text" class="form-control input-lg"
+                   name="postcode" id="homeno"
+                   placeholder="___________">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group input-block-level">
+                <label class="sr-only" for="callback"></label>
+                <select ng-model="formData.callback" ng-options="callback.option for callback in callbacktimes" class="form-control input-lg" name="callback" id="callback">
+                    <option value="">Call Back Time</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-12">
+            <p><i class="fa fa-info-circle"></i>
+
+                By continuing, you agree to our <a href="/terms-conditions.html">Terms</a> and <a href="/privacy.html">Privacy
+                    Policy</a>. We and the mortgage Providers enrolled in
+
+                our service may use the data you supply to enable the Providers and other Third Party relevant
+
+                suppliers to contact you with more information about your eligibility for mortgages or other suitable
+
+                products or to help you progress your mortgage applications. Your data and how we use the
+
+                information we collect on you is contained within our <a href="/privacy.html">Privacy Policy</a>.
+                Mortgage advisers may charge a
+
+                fee for their service. Our panel of independent advisers has agreed to comply with our Code of
+
+                Conduct.
+            </p>
+        </div>
+        <div class="col-md-1  col-xs-2 ">
+            <a ui-sref="form.identity" class="btn btn-block form-back">
+                <span class="glyphicon glyphicon-circle-arrow-left"></span>
+            </a>
+        </div>
+        <div class="col-md-6 col-md-offset-5 col-xs-10">
+            <a ui-sref="form.finish" class="btn btn-block btn-lg btn-warning form-apply"
+               ng-click="processForm(signupform)" ng-disabled="!mobilenoCheck" analytics-on
+               analytics-event="Mortgage" analytics-category="Mortgage" analytics-label="6Finish">
+                Finish <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+             aria-valuemax="100" style="width: 100%;">
+            100% Complete
+        </div>
+    </div>
+</div>
