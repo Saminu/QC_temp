@@ -8,7 +8,7 @@ angular
             restrict: 'AE',
             replace: 'true',
             templateUrl: '/templates/product-table.html',
-            link: function ($scope, element, attributes) {
+            link: function ($scope, attributes) {
 
                 $scope.getAprColspan = function (isMobile) {
 
@@ -33,7 +33,7 @@ angular
                     if (useImage) {
 
                         for (i in $scope.feed.meta) {
-                            if ($scope.feed.meta.hasOwnProperty(i)) {
+                            if ($scope.feed.meta.w(i)) {
                                 if ($scope.feed.meta[i].message !== undefined) {
                                     return 2;
                                 }
@@ -179,20 +179,11 @@ angular
 
                 Product.get({productType: attributes.productList}).$promise.then(function (feed) {
                     $scope.feed = feed;
-                    //console.log($scope.feed);
 
-                    //for (i = 0; i < 50; i++) {
-                    //  exclude += $scope.bannerid2;
                     $scope.openXvalues(feed, 1);
-                    //    console.log($scope.bannerid2);
-                    //}
-
-
-                    //$scope.openXArray = openXArray;
-                    //console.log(openXArray);
-                    //  console.log(feed.data);
 
                     shuffleArray($scope.feed.data);
+
 
                 }, function (error) {
                     console.log(error);
