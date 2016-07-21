@@ -129,18 +129,17 @@ angular
 
                             qs = getQueryStringParameters(result);
                             if (qs.bannerid == undefined) {
-                                return
+                                return true;
                             }
-                            //bannerid = qs.bannerid;
 
+                            //bannerid = qs.bannerid;
                             if ($scope.bannerid_exclude_list == undefined) {
                                 $scope.bannerid_exclude_list = qs.bannerid;
                             } else {
                                 $scope.bannerid_exclude_list += "," + qs.bannerid;
                             }
-                            //build list of excludes
-                            //excludeOb.data = bannerid + ',';
 
+                            //build list of excludes
                             var matched = undefined;
                             // console.log('looking for bannerid ' + qs.bannerid);
                             for (var i = 0; i < feed.data.length; i++) {

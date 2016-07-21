@@ -88,16 +88,16 @@
       <file leaf-file-name="productList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app/directives/productList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79136693">
-              <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.44124702">
+              <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
               <folding>
                 <element signature="e#367#948#0" expanded="false" />
                 <element signature="e#1010#1448#0" expanded="false" />
                 <element signature="e#1546#2114#0" expanded="false" />
-                <element signature="e#8358#8417#0" expanded="false" />
-                <element signature="e#8505#8594#0" expanded="false" />
-                <element signature="e#8646#8827#0" expanded="false" />
-                <element signature="e#8910#9433#0" expanded="false" />
+                <element signature="e#8301#8360#0" expanded="false" />
+                <element signature="e#8448#8537#0" expanded="false" />
+                <element signature="e#8589#8770#0" expanded="false" />
+                <element signature="e#8853#9376#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -767,12 +767,12 @@
       <option name="number" value="Default" />
       <updated>1469062145992</updated>
       <workItem from="1469062148792" duration="1711000" />
-      <workItem from="1469108948455" duration="430000" />
+      <workItem from="1469108948455" duration="696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2141000" />
+    <option name="totallyTimeSpent" value="2407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1390" height="793" extended-state="0" />
@@ -876,10 +876,10 @@
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#8358#8417#0" expanded="false" />
-            <element signature="e#8505#8594#0" expanded="false" />
-            <element signature="e#8646#8827#0" expanded="false" />
-            <element signature="e#8910#9433#0" expanded="false" />
+            <element signature="e#8301#8360#0" expanded="false" />
+            <element signature="e#8448#8537#0" expanded="false" />
+            <element signature="e#8589#8770#0" expanded="false" />
+            <element signature="e#8853#9376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -992,18 +992,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/sitewide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7721822">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/app/directives/productList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79136693">
-          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.44124702">
+          <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
           <folding>
             <element signature="e#367#948#0" expanded="false" />
             <element signature="e#1010#1448#0" expanded="false" />
             <element signature="e#1546#2114#0" expanded="false" />
-            <element signature="e#8358#8417#0" expanded="false" />
-            <element signature="e#8505#8594#0" expanded="false" />
-            <element signature="e#8646#8827#0" expanded="false" />
-            <element signature="e#8910#9433#0" expanded="false" />
+            <element signature="e#8301#8360#0" expanded="false" />
+            <element signature="e#8448#8537#0" expanded="false" />
+            <element signature="e#8589#8770#0" expanded="false" />
+            <element signature="e#8853#9376#0" expanded="false" />
           </folding>
         </state>
       </provider>
